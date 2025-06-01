@@ -25,8 +25,6 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('ageDisplay').textContent = age;
 });
 
-
-
 // Scrollable cards functionality
 const scrollableCards = document.getElementById('scrollableCards');
 const scrollDots = document.querySelectorAll('.scroll-dot');
