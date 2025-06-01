@@ -498,35 +498,53 @@ body {
     font-size: 0.9rem;
 }
 
-/* Projects Grid */
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin-bottom: 20px;
-}
-
-.project-card {
-    background-color: var(--secondary);
-    border-radius: 12px;
-    padding: 15px;
-    border: 1px solid var(--accent);
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-5px);
-}
-
-.project-card h3 {
+/* CV Projects Style */
+.cvsection {
+    font-size: 1.4rem;
+    font-weight: bold;
     color: var(--accent);
-    margin-bottom: 10px;
-    font-size: 1.1rem;
+    margin-bottom: 15px;
+    border-bottom: 2px solid var(--accent);
+    padding-bottom: 5px;
 }
 
-.project-card p {
+.cvevent {
+    margin-bottom: 10px;
+}
+
+.cvevent-header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-bottom: 5px;
+}
+
+.cvevent-title {
+    font-weight: bold;
+    color: var(--text-primary);
+    margin-right: 10px;
+}
+
+.cvevent-subtitle {
+    color: var(--text-secondary);
+    flex-grow: 1;
+}
+
+.cvevent-date {
+    color: var(--text-secondary);
+}
+
+.cvevent-description {
     font-size: 0.9rem;
     color: var(--text-secondary);
+    margin-left: 15px;
+}
+
+.divider {
+    height: 1px;
+    background-color: var(--accent);
+    margin: 10px 0;
+    opacity: 0.3;
 }
 
 /* Section Title */
