@@ -319,34 +319,6 @@ body {
     box-shadow: 0 2px 5px var(--primary);
 }
 
-/* =========================
-   DESIGN
-========================= */
-.line-divider {
-  height: 1px;
-  width: 100%;
-  background: var(--accent);
-  margin: 15px 0;
-  opacity: 0.5;
-  border: none;
-}
-
-.line-divider-dash {
-  height: 1px;
-  width: 100%;
-  background: transparent;
-  margin: 15px 0;
-  border: none;
-  background-image: linear-gradient(
-    to right,
-    var(--accent) 50%,
-    transparent 50%
-  );
-  background-size: 8px 1px;
-  background-repeat: repeat-x;
-  opacity: 0.5;
-}
-
 /* Language Level */
 .language-proficiency {
   display: flex;
@@ -420,7 +392,7 @@ body {
   opacity: 1;
 }
 
-/* Secondary Content (Scrollable cards) */
+/* Secondary Content */
 .secondary-content {
     flex: 1;
     display: flex;
@@ -447,10 +419,9 @@ body {
     overflow-y: auto;
     scrollbar-width: none;
     border-radius: 0 0 0 12px;
-}
-
-.scroll-card::-webkit-scrollbar {
-    display: none;
+    &::-webkit-scrollbar {
+        display: none;
+    }
 }
 
 .scroll-nav {
@@ -477,6 +448,34 @@ body {
     transform: scale(1.2);
 }
 
+/* =========================
+   DESIGN
+========================= */
+.line-divider {
+  height: 1px;
+  width: 100%;
+  background: var(--accent);
+  margin: 15px 0;
+  opacity: 0.5;
+  border: none;
+}
+
+.line-divider-dash {
+  height: 1px;
+  width: 100%;
+  background: transparent;
+  margin: 15px 0;
+  border: none;
+  background-image: linear-gradient(
+    to right,
+    var(--accent) 50%,
+    transparent 50%
+  );
+  background-size: 8px 1px;
+  background-repeat: repeat-x;
+  opacity: 0.5;
+}
+
 /* Headers */
 .section-header {
     color: var(--accent);
@@ -498,7 +497,9 @@ body {
 
 /* Banner - Doubled in size */
 .banner {
-    background: linear-gradient(135deg, var(--secondary), var(--primary));
+    background: 
+        linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+        url('banner.jpg') center/cover no-repeat;
     color: var(--text);
     border-radius: 12px;
     padding: 60px;
@@ -579,17 +580,6 @@ body {
     font-size: 0.9rem;
     color: var(--text-secondary);
 }
-
-
-/* Section Title */
-.section-title {
-    color: var(--accent);
-    margin: 30px 0 15px;
-    font-size: 1.4rem;
-    border-bottom: 1px solid var(--accent);
-    padding-bottom: 5px;
-}
-
 
 
 /* Navigation Menu - Rotated 90 degrees */
