@@ -448,6 +448,62 @@ body {
     transform: scale(1.2);
 }
 
+.reference-item {
+  margin-bottom: 1.5em;
+  padding-bottom: 1.5em;
+  color: var(--accent);
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.reference-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.3em;
+}
+
+.reference-name {
+  margin: 0;
+  font-size: 0.9em;
+  font-weight: 600;
+}
+
+.reference-tag {
+  font-size: 0.6em;
+  padding: 0.2em 0.5em;
+  border-radius: 10px;
+  text-transform: uppercase;
+}
+
+.professional {
+  background-color: #e3f2fd;
+  color: #1565c0;
+}
+
+.personal {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.reference-title {
+  margin: 0.2em 0 0.8em 0;
+  font-size: 0.75em;
+  font-style: italic;
+  color: #e3f2fd;
+}
+
+.reference-contact {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3em;
+  font-size: 0.7em;
+}
+
+.contact-method {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
 /* =========================
    DESIGN
 ========================= */
@@ -549,38 +605,78 @@ body {
     font-size: 0.9rem;
 }
 
-/* CV Projects Style */
 /* Projects Grid */
 .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 15px;
-    margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: 1.5rem;
+  padding: 1rem;
 }
 
 .project-card {
-    background-color: var(--secondary);
-    border-radius: 12px;
-    padding: 15px;
-    border: 1px solid var(--accent);
-    transition: transform 0.3s ease;
+  position: relative;
+  padding: 1.2rem;
+  border-radius: 8px;
+  background: white;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: transform 0.3s ease;
+  overflow: hidden;
 }
 
-.project-card:hover {
-    transform: translateY(-5px);
+.project-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  margin-bottom: 8px;
 }
 
-.project-card h3 {
-    color: var(--accent);
-    margin-bottom: 10px;
-    font-size: 1.1rem;
+.project-title {
+  color: var(--accent);
+  font-size: 1.1rem;
+  margin: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: calc(100% - 46px); /* 36px icon + 10px gap */
 }
 
-.project-card p {
-    font-size: 0.9rem;
-    color: var(--text-secondary);
+.project-meta {
+  margin-bottom: 8px;
 }
 
+.project-content {
+  max-height: 3.6em; /* Show ~2 lines of text */
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.project-card:hover .project-content {
+  max-height: 200px; /* Expand to full content */
+}
+
+.project-meta h4,
+.project-meta h5 {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  margin: 0 0 2px 0;
+}
+
+.project-icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  filter: grayscale(30%) opacity(0.9);
+  transition: all 0.3s ease;
+}
+
+.project-card:hover .project-icon {
+  filter: grayscale(0%) opacity(1);
+  transform: scale(1.1);
+}
 
 /* Navigation Menu - Rotated 90 degrees */
 .nav-menu {
