@@ -587,6 +587,12 @@ body {
     margin-bottom: 30px;
 }
 
+.stat-title {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent);
+}
+
 .stat-item {
     text-align: center;
     flex: 1;
@@ -822,5 +828,150 @@ body {
     
     .banner p {
         font-size: 1rem;
+    }
+}
+
+/* Main Container */
+.services-experience {
+  padding: 2rem 0;
+}
+
+/* Main Container */
+.scroll-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+}
+
+/* Each Scroll Section */
+.scroll-section {
+  width: 100%;
+}
+
+/* Horizontal Scroll Wrapper */
+.horizontal-scroll {
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: minmax(450px, 1fr); /* Fixed card width */
+  gap: 1.5rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 1rem 0;
+  height: 500px; /* Fixed height for 2 rows */
+}
+
+/* Cards - Fixed Size */
+.experience-card {
+  scroll-snap-align: start;
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  height: 240px; /* Fixed card height */
+  width: 300px; /* Fixed card width */
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card {
+  scroll-snap-align: start;
+  background: white;
+  border-radius: 8px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  height: 240px; /* Fixed card height */
+  width: 250px; /* Fixed card width */
+  display: flex;
+  flex-direction: column;
+}
+
+/* Hide Scrollbar */
+.horizontal-scroll::-webkit-scrollbar {
+  display: none;
+}
+.horizontal-scroll {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+/* Visual Scroll Hint */
+.subsection-title {
+  position: relative;
+  padding-right: 30px;
+}
+.subsection-title::after {
+  content: "→";
+  position: absolute;
+  right: 0;
+  animation: bounceRight 2s infinite;
+}
+.services-offered .subsection-title::after {
+  content: "←";
+  left: 0;
+  right: auto;
+  animation: bounceLeft 2s infinite;
+}
+
+@keyframes bounceRight {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(10px); }
+}
+@keyframes bounceLeft {
+  0%, 100% { transform: translateX(0); }
+  50% { transform: translateX(-10px); }
+}
+
+.ex-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  height: 180px;
+  position: relative;
+  color: white; /* Ensure text is readable */
+  display: flex;
+  flex-direction: column;
+}
+
+.projects-container {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.work-card {
+  background: var(--secondary);
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  overflow: hidden;
+  height: 250px;
+  position: relative;
+}
+
+/* Hover Effects - Only affects hovered card */
+.work-card:hover {
+  position: relative;
+  z-index: 10;
+  min-height: 180px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  transform: scale(1.05)
+}
+
+.work-card:hover .card-title {
+  white-space: normal;
+  overflow: visible;
+}
+
+.work-card:hover .card-description {
+  -webkit-line-clamp: unset;
+  overflow: visible;
+}
+
+.work-card:hover .card-body {
+    overflow-y: auto;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+        display: none;
     }
 }
