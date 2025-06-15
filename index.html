@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>James | Curriculum Vitæ</title>
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    <script src="main.js" defer></script>
+    <script src="script.js" defer></script>
 </head>
 <body>
     <div class="main-container">
@@ -752,6 +753,27 @@
                             </div>
                             <div class="project-container">
                                 <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
+                url('wallmart.png') center/cover no-repeat;">
+                                </div>
+                                <div class="work-card">
+                                    <div class="card-content">
+                                        <div class="card-header">
+                                            <h3 class="card-title">Digital Shelf Labeling Associate</h3>
+                                        </div>
+                                        <div class="card-meta">
+                                            <span style="color: #f0f0f0;">Walmart Supercenter Store 1802</span>
+                                            <span>2024</span>
+                                        </div>
+                                        <div class="card-body">
+                                            <p class="card-tech">
+                                                <strong>Skills: </strong>Equipment Handling • Dexterity • Team Training
+                                            </p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="project-container">
+                                <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
                 url('TOTH.png') center/cover no-repeat;">
                                 </div>
                                 <div class="work-card">
@@ -822,6 +844,7 @@
         <div class="right-panel" id="rightPanel">
             <div class="nav-menu">
                 <div class="nav-items-container">
+                    <span class="nav-separator">|</span>
                     <a href="#" class="nav-item">Home</a>
                     <span class="nav-separator">|</span>
                     <a href="#" class="nav-item">Services</a>
@@ -833,6 +856,47 @@
                     <a href="#" class="nav-item">Blog</a>
                     <span class="nav-separator">|</span>
                     <a href="#" class="nav-item">Contact</a>
+                    <span class="nav-separator">|</span>
+                    <!-- Language Selector -->
+                    <div class="nav-item lang-menu">
+                        <div class="selected-lang" id="selectedLang">
+                            <span class="lang-flag en"></span>
+                            <span class="lang-text">EN</span>
+                        </div>
+                        <ul class="lang-dropdown">
+                            <li>
+                                <a href="#en" data-lang="en">
+                                    <span class="lang-flag en"></span>
+                                    <span class="lang-text">English</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#id" data-lang="id">
+                                    <span class="lang-flag id"></span>
+                                    <span class="lang-text">Bahasa</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#de" data-lang="de">
+                                    <span class="lang-flag de"></span>
+                                    <span class="lang-text">Deutsch</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#zh" data-lang="zh">
+                                    <span class="lang-flag cn"></span>
+                                    <span class="lang-text">中文</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#ja" data-lang="ja">
+                                    <span class="lang-flag jp"></span>
+                                    <span class="lang-text">日本語</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <span class="nav-separator">|</span>
                 </div>
             </div>
         </div>
@@ -846,5 +910,4 @@
     </div>
 
 </body>
-
 </html>
