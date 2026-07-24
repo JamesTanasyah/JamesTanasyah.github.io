@@ -258,20 +258,89 @@ body {
     border-radius: 35%;
     object-fit: cover;
     position: relative;
-    border: 1.5px solid var(--accent);
+    border: 1.2px solid var(--accent);
     overflow: hidden;
 }
 
 .profile-name {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
     font-size: 1.4rem;
     font-weight: bold;
     color: var(--accent);
     margin: 5px;
+    background: linear-gradient(
+        90deg,
+        #c5c5c5 0%,
+        #b385af 25%,
+        var(--accent) 50%,
+        #b385af 75%,
+        #c5c5c5 100%
+    );
+    background-size: 300% auto;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 6s linear infinite;
+}
+
+@keyframes shimmer {
+    to {
+        background-position: 300% center;
+    }
+}
+
+.profile-name:hover {
+    transform: scale(1.03);
+}
+
+.status-indicator {
+    width: 12px;
+    height: 11px;
+    border-radius: 50%;
+    display: inline-block;
+}
+
+.status-indicator.online {
+    background-color: #22c55e;
+    animation: pulseGreen 1.5s infinite;
+}
+
+.status-indicator.busy {
+    background-color: #ef4444;
+    animation: pulseRed 1.5s infinite;
+}
+
+.status-indicator.offline {
+    background-color: #9ca3af;
+    animation: pulseGray 1.5s infinite;
+}
+
+.status-indicator.away {
+    background-color: #facc15;
+    animation: pulseYellow 1.5s infinite;
 }
 
 .profile-title {
+    display: inline-block;
     color: var(--text-secondary);
     font-size: 1rem;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(30, end) infinite alternate, blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink {
+    50% {
+        border-color: transparent;
+    }
 }
 
 .profile-contact {
@@ -631,6 +700,63 @@ body {
     background: linear-gradient(90deg, var(--accent), transparent);
 }
 
+.section-header a {
+  text-decoration: none;
+}
+
+.section-header a:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.spinning-globe {
+  display: inline-block;
+  text-decoration: none;
+  animation: spin 4s linear infinite;
+  transform-origin: center;
+}
+
+.spinning-globe:hover {
+  animation-play-state: paused; /* Pause on hover */
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.small-icon {
+  width: 24px;
+  height: 24px;
+  vertical-align: middle;
+}
+
+.hero-text {
+    font-size: 1.25rem;
+    line-height: 1.8;
+    max-width: 700px;
+    color: #ddd;
+}
+
+.highlight {
+    color: #4ecdc4;
+    font-weight: 700;
+}
+
+.accent {
+    color: #f7c948;
+    font-weight: 700;
+}
+
+.scroll-hint {
+    font-style: italic;
+    color: #999;
+}
+
 /* Banner - Doubled in size */
 .banner {
     background: 
@@ -762,12 +888,24 @@ body {
   color: var(--text);
   margin: 0;
   display: -webkit-box;
-  -webkit-line-clamp: auto;
+  line-clamp: none;
+  -webkit-line-clamp: none;
   -webkit-box-orient: vertical;
   overflow: hidden;
   text-overflow: ellipsis;
   flex-grow: 1;
   transition: all 0.3s ease;
+}
+
+.card-description-bullet {
+    font-size: 0.5rem;
+    padding-left: 1rem;
+    list-style: none;
+    padding-left: 0;
+}
+
+.card-description-bullet li {
+    margin-bottom: 0.3rem;
 }
 
 /* Hover Effects - Only affects hovered card */
@@ -785,6 +923,7 @@ body {
 }
 
 .project-card:hover .card-description {
+  line-clamp: none;
   -webkit-line-clamp: unset;
   overflow: visible;
 }
@@ -1002,6 +1141,30 @@ body {
   50% { transform: translateX(-10px); }
 }
 
+@keyframes pulseGreen {
+    0% {
+        box-shadow: 0 0 0 0 rgba(34,197,94,.7);
+    }
+    70% {
+        box-shadow: 0 0 0 8px rgba(34,197,94,0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(34,197,94,0);
+    }
+}
+
+@keyframes pulseRed {
+    0% {
+        box-shadow: 0 0 0 0 rgba(239,68,68,.7);
+    }
+    70% {
+        box-shadow: 0 0 0 8px rgba(239,68,68,0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(239,68,68,0);
+    }
+}
+
 .ex-card {
   border-radius: 8px;
   box-shadow: 0 2px 10px rgba(0,0,0,0.08);
@@ -1045,6 +1208,7 @@ body {
 
 .work-card:hover .card-description {
   -webkit-line-clamp: unset;
+  line-clamp: unset;
   overflow: visible;
 }
 

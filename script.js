@@ -122,3 +122,41 @@ rightToggle.addEventListener('click', () => togglePanel(rightPanel));
 
 // Initialize
 scrollToCard(0);
+
+
+const indicator = document.getElementById("statusIndicator");
+
+/*
+|--------------------------------------------------------------------------
+| Placeholder
+|--------------------------------------------------------------------------
+| Later this value will come from your Google Calendar backend.
+|
+| Available values:
+|   "online"
+|   "busy"
+|   "offline"
+|--------------------------------------------------------------------------
+*/
+
+const portfolioStatus = "online";
+
+updateStatus(portfolioStatus);
+
+function updateStatus(status) {
+    indicator.className = `status-indicator ${status}`;
+
+    switch (status) {
+        case "online":
+            indicator.title = "Available";
+            break;
+
+        case "busy":
+            indicator.title = "Busy";
+            break;
+
+        case "offline":
+            indicator.title = "Offline";
+            break;
+    }
+}
