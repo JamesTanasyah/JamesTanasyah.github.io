@@ -1145,7 +1145,7 @@ body {
 
 /* Main Container */
 .services-experience {
-  padding: 2rem 0;
+  padding: 2rem 1.5rem 1.5rem;
 }
 
 /* Main Container */
@@ -1171,6 +1171,14 @@ body {
   scroll-snap-type: x mandatory;
   padding: 1rem 0;
   height: 500px; /* Fixed height for 2 rows */
+}
+
+.horizontal-scroll.reverse {
+    direction: rtl;
+}
+
+.horizontal-scroll.reverse > * {
+    direction: ltr; /* Keeps the card contents normal */
 }
 
 /* Cards - Fixed Size */
