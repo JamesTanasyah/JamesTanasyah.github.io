@@ -160,3 +160,25 @@ function updateStatus(status) {
             break;
     }
 }
+
+
+document.querySelectorAll(".nav-item[data-target]").forEach(item => {
+    item.addEventListener("click", function(e) {
+        e.preventDefault();
+
+        const target = document.getElementById(this.dataset.target);
+
+        document.querySelectorAll("details").forEach(detail => {
+            if (detail !== target) {
+                detail.open = false;
+            }
+        });
+
+        target.open = true;
+
+        target.scrollIntoView({
+            behavior: "smooth",
+            block: "start"
+        });
+    });
+});

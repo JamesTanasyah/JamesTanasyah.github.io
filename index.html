@@ -3,26 +3,36 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <title>James | Curriculum Vitæ</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="icon" type="image/png" 
+        href="pic.avif">
+    <link rel="stylesheet" 
+        href="style.css">
+    <link rel="stylesheet" 
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
     <script src="script.js" defer></script>
     <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
 </head>
+
 <body>
     <div class="main-container">
-        <!-- ========== -->
-        <!-- Left Panel -->
-        <!-- ========== -->
+    <!-- Left Panel -->
         <div class="left-panel" id="leftPanel">
-            <!-- ============== -->
-            <!-- Profile Header -->
+        <!-- Profile Header -->
             <div class="profile-header">
-                <img src="James.Tanasyah.jpg" alt="Loading..." class="profile-pic">
-                <div class="profile-name">James Jordan Tanasyah
-                       <span id="statusIndicator" class="status-indicator online"></span>
+                <img class="profile-pic" alt="Loading..."
+                    src="James.Tanasyah.jpg">
+                <div class="profile-name">
+                    James Jordan Tanasyah <span id="statusIndicator" class="status-indicator online"></span>
                 </div>
-                <div class="profile-title">Entry-Level Developer</div>
+                <div class="profile-title">
+                    Entry-Level Developer
+                </div>
+                
+                <!-- Profile Contact -->
                 <div class="profile-contact">
                     <a href="https://github.com/JamesTanasyah" class="social-icon" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
@@ -43,12 +53,15 @@
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
+                
+                <!-- Expand Button -->
                 <button class="expand-btn" id="expandBtn">ⓘ</button>
             </div>
-            <!-- Profile Details -->
+
+        <!-- Profile Details -->
             <div class="profile-content" id="profileContent">
-                <!-- Info -->
-                <div class="text-block" style="border-bottom: 1px solid #f0f0f0; margin-bottom: 1em; padding-bottom: 1em;">
+            <!-- Info -->
+                <div class="profile-content-info">
                     <div class="info-grid">
                         <span style="color: var(--accent);">Residence:</span>
                         <span>USA</span>
@@ -58,38 +71,42 @@
                         <span id="ageDisplay">Calculating...</span>
                     </div>
                 </div>
-                <!-- Achivement -->
+
+            <!-- Achivement -->
                 <div class="achievement-card">
                     <div class="achievement-icon">
                         <i class="fas fa-trophy"></i>
                     </div>
                     <div class="achievement-content">
                         <h3>Fantastic Achievement</h3>
-                        <p><span class="info-label">3.8 in CIS</span> & Cumulative 3.7 GPA, Active Extracullicular</p>
+                        <p>
+                            <span class="info-label">3.8 in CIS</span> &
+                            Cumulative 3.7 GPA, Active Extracurricular
+                        </p>
                     </div>
                 </div>
-                <div class="text-block" style="border-bottom: 1px solid #f0f0f0; margin-bottom: .7em; padding-bottom: .7em;">
-                    <div class="achievement-card">
-                        <div class="achievement-icon">
-                            <i class="fas fa-heartbeat"></i>
-                        </div>
-                        <div class="achievement-content">
-                            <h3>Characteristic</h3>
-                            <p>Passionate, Self-discipline, Autodidact</p>
-                        </div>
+                <div class="achievement-card">
+                    <div class="achievement-icon">
+                        <i class="fas fa-heartbeat"></i>
+                    </div>
+                    <div class="achievement-content">
+                        <h3>Characteristics</h3>
+                        <p>Passionate, Self-disciplined, Autodidact</p>
                     </div>
                 </div>
-                <!-- Strength -->
-                <div class="text-block" style="border-bottom: 1px solid #f0f0f0; margin-bottom: 1.5em;">
-                    <div class="skills-section">
-                        <h3 class="skills-title">STRENGTHS</h3>
+
+            <!-- Strength -->
+                <div class="skills-section section-divider">
+                    <h3 class="skills-title">STRENGTHS</h3>
+                    <div class="skills-group">
                         <div class="skills-tags">
                             <span class="skill-tag">Project Management</span>
                             <span class="skill-tag">Eye for Details</span>
                             <span class="skill-tag">Problem Solving</span>
                             <span class="skill-tag">Training and Teaching</span>
                         </div>
-                        <div class="line-divider-dash"></div>
+                    </div>
+                    <div class="skills-group">
                         <div class="skills-tags">
                             <span class="skill-tag">Mathematics</span>
                             <span class="skill-tag">Systems Thinking</span>
@@ -98,7 +115,8 @@
                             <span class="skill-tag">Algorithms</span>
                             <span class="skill-tag">Interpersonal Comm.</span>
                         </div>
-                        <div class="line-divider-dash"></div>
+                    </div>
+                    <div class="skills-group">
                         <div class="skills-tags">
                             <span class="skill-tag">Python</span>
                             <span class="skill-tag">Java</span>
@@ -114,8 +132,10 @@
                         </div>
                     </div>
                 </div>
-                <!-- Language -->
-                <div class="text-block" style="border-bottom: 1px solid #f0f0f0; margin-bottom: 1em; padding-bottom: 1em;">
+
+            <!-- Language -->
+                <div class="language-section language-section-divider">
+                    <h3 class="skills-title">LANGUAGES</h3>
                     <div class="language-proficiency">
                         <div class="language-card">
                             <div class="language-name">English</div>
@@ -148,10 +168,13 @@
                     </div>
                 </div>
             </div>
+
             <!-- Secondary Content -->
             <div class="secondary-content" id="secondaryContent">
                 <div class="scrollable-container">
                     <div class="scrollable-cards" id="scrollableCards">
+                        
+                        <!-- Introduction Section -->
                         <div class="scroll-card">
                             <div class="text-block">
                                 <h4 class="section-header"> 
@@ -184,6 +207,8 @@
                                 <span class="scroll-hint">Switch for Education →</span>
                             </div>
                         </div>
+                        
+                        <!-- Education Section -->
                         <div class="scroll-card">
                             <h2 style="color: #b0b0b0; margin-bottom: 0.5em;"><strong>📚 EDUCATION</strong></h2>
                             <div class="text-block">
@@ -258,7 +283,10 @@
                                 ▲ Kindergarten: English & Mandarin & Swimming
                                 </p>
                             </div>
+                            <span class="scroll-hint">Switch for References →</span>
                         </div>
+                        
+                        <!-- References Section -->
                         <div class="scroll-card">
                             <h2 style="color: #b0b0b0; margin-bottom: 0.5em;">📌 <strong>REFERENCES</strong></h2>
                             <div class="reference-item">
@@ -320,6 +348,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="scroll-nav" id="scrollNav">
                     <span class="scroll-dot active" data-index="0"></span>
                     <span class="scroll-dot" data-index="1"></span>
@@ -327,19 +356,22 @@
                 </div>
             </div>
         </div>
+
         <!-- Left Panel Toggle -->
         <div class="left-toggle" id="leftToggle">
             <div class="left-toggle-dot"></div>
             <div class="left-toggle-dot"></div>
             <div class="left-toggle-dot"></div>
         </div>
+
         <!-- Middle Content -->
         <div class="middle-section" id="middleSection">
-            <!-- Banner - Now twice as big -->
+            <!-- Banner -->
             <div class="banner">
                 <h2>GET TO KNOW ME!</h2>
                 <p>How I got into where I am?</p>
             </div>
+
             <!-- Stats Section -->
             <div class="stats">
                 <div class="stat-item">
@@ -358,647 +390,668 @@
                     <div class="stat-number">5+</div>
                     <div class="stat-label">Honors and Awards</div>
                 </div>
-            </div><br>
+            </div>
+            
             <!-- Projects Section -->
-            <h2 class="stat-title" style="text-align: center;">PROJECTS</h2><br>
-            <div class="projects-grid">
-                <div class="project-card">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <h3 class="card-title">HabitGuard</h3>
-                            <a href="https://github.com/jvillanueva3651/HabitGuard" target="_blank" rel="noopener noreferrer">
-                                <img class="card-icon" src="habit_guard.png" alt="Project icon">
-                            </a>
-                        </div>
-                        <div class="card-meta">
-                            <span style="color: #f0f0f0;">Final Capstone |<br> Mobile App</span>
-                            <span>Spring25</span>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-description">
-                                Android app developed through Android Studio, marking my transition into <strong>mobile development</strong>. This project helped me:
-                            </p>
-                            <div class="card-description-bullet">
-                                <li>📱 Basic <span class="highlight">Kotlin</span> hands-on implementation</li>
-                                <li>🔐 Integrated <span class="highlight">Firebase</span> authentication & DB backend</li>
-                                <li>🔄 Applied <span class="highlight">software engineering</span> sprint from requirements to deployment</li>
-                                <li>📈 Delivered a <span class="highlight">functional MVP</span> tracking spending habits</li>
-                            </div>
-                            <p class="card-description">
-                                <em>(Click the icon for more)</em>
-                            </p>
-                            <p class="card-tech">
-                                <span class="accent">Learning Milestones: </span>Android Studio • Kotlin • Firebase Auth/Firestore DB • UI Design
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <h3 class="card-title">Wearable's UI/UX on Mental Health</h3>
-                            <a href="https://www.iacis.org/iis/2025/2_iis_2025_387-401.pdf" target="_blank" rel="noopener noreferrer">
-                                <img class="card-icon" src="IACIS.png" alt="Project icon">
-                            </a>
-                        </div>
-                        <div class="card-meta">
-                            <span style="color: #f0f0f0;">Published Research |<br> IACIS Conference</span>
-                            <span>Spring25</span>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-description">
-                                <strong>Peer-reviewed publication</strong> exploring how <strong>wearable UI/UX design</strong> can address <strong>mental health</strong> challenges in tech. Key contributions:
-                            </p>
-                            <div class="card-description-bullet">
-                                <li>👥 Led user studies with <span class="highlight">100+ participants</span> to identify anxiety-reducing interface patterns</li>
-                                <li>📝 <span class="highlight">International publication</span> as part of International  Association for Computer Information Systems <span class="highlight">(IACIS)</span> conference proceedings</li>
-                                <li>💡 Bridged computer science and mental health perspectives through <span class="highlight">human-computer interaction (HCI)</span> research</li>
-                            </div>
-                            <p class="card-description">
-                                <em>(Click the icon for more)</em>
-                            </p>
-                            <p class="card-tech">
-                                <span class="accent">Learning Milestones: </span>Research Procedure • Peer Review • UI/UX Design • Mental Health • Survey Analysis
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <h3 class="card-title">Epidemiological Spread Simulation</h3>
-                            <a href="https://drive.google.com/drive/folders/1LUA-w7OS4nCBs2Dd1SqgLtwrMoxuup8y?usp=drive_link" target="_blank" rel="noopener noreferrer">
-                                <img class="card-icon" src="VBA.png" alt="Project icon">
-                            </a>
-                        </div>
-                        <div class="card-meta">
-                            <span style="color: #f0f0f0;">Data Modeling |<br> VBA/Excel</span>
-                            <span>Spring25</span>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-description">
-                                Developed a dynamic infection spread <strong>data model</strong> demonstrating:
-                            </p>
-                            <div class="card-description-bullet">
-                                <li>📊 <span class="highlight">Automated data processing</span> of population health metrics using VBA macros</li>
-                                <li>🔄 <span class="highlight">SIRD simulations</span> to predict outbreak scenarios</li>
-                                <li>📈 <span class="highlight">Interactive dashboards</span> visualizing transmission rates and containment strategies</li>
-                            </div>
-                            <p class="card-description">
-                                <em>(Click the icon for more)</em>
-                            </p>
-                            <p class="card-tech">
-                                <span class="accent">Learning Milestones: </span>Big Data • Live Data • Visual Basic • Automation
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <h3 class="card-title">Handedness Classification</h3>
-                            <a href="https://github.com/FDCub4/CM-332" target="_blank" rel="noopener noreferrer">
-                                <img class="card-icon" src="handedness.png" alt="Project icon">
-                            </a>
-                        </div>
-                        <div class="card-meta">
-                            <span style="color: #f0f0f0;">Machine Learning |<br> Project</span>
-                            <span>FA23/SP24</span>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-description">
-                                Designed and implemented a <strong>convolutional neural network</strong> to analyze hand dominance from image data:
-                            </p>
-                            <div class="card-description-bullet">
-                                <li>🖐️ <span class="highlight">Data Mining</span>: Compiled and labeled 150+ hand images for training</li>
-                                <li>🧠 <span class="highlight">Model Architecture</span>: Custom CNN achieving 85% right-handed validation accuracy showing inherent class imbalance</li>
-                                <li>🔍 <span class="highlight">Feature Analysis</span>: Identified key markers for left/right-hand dominance</li>
-                            </div>
-                            <p class="card-description">
-                                <em>(Click the icon for more)</em>
-                            </p>
-                            <p class="card-tech">
-                                <span class="accent">Learning Milestones: </span>Data Mining • Image Processing • Convolutional Neural Networks • TensorFlow • Python
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <h3 class="card-title">Sandbox Malware Analysis</h3>
-                            <img class="card-icon" src="cuckoo.jpg" alt="Project icon">
-                        </div>
-                        <div class="card-meta">
-                            <span style="color: #f0f0f0;">Cybersecurity Res. |<br> ComptTIA Security+</span>
-                            <span>Spring24</span>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-description">
-                                Conducted comprehensive <strong>malware analysis</strong> using Cuckoo Sandbox environment:
-                            </p>
-                            <div class="card-description-bullet">
-                                <li>🛡️ <span class="highlight">Purple Team Methodology</span>: Combined offensive and defensive techniques to analyze Morris Worm and Code Red malware samples</li>
-                                <li>🔍 <span class="highlight">Behavioral Analysis</span>: Monitored API calls, registry changes, and network traffic patterns</li>
-                                <li>📊 <span class="highlight">Threat Reporting</span>: Documented IOC's (Indicators of Compromise) and mitigation strategies</li>
-                            </div>
-                            <p class="card-tech">
-                                <span class="accent">Learning Milestones: </span>Cuckoo Sandbox • Wireshark • YARA • Volatility • CompTIA Security+
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <h3 class="card-title">Movie System</h3>
-                            <img class="card-icon" src="movieDB.png" alt="Project icon">
-                        </div>
-                        <div class="card-meta">
-                            <span style="color: #f0f0f0;">DB Management |<br> PostgreSQL</span>
-                            <span>Spring24</span>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-description">
-                                Designed and implemented a comprehensive movie <strong>database system</strong> to manage and query film data effectively:
-                            </p>
-                            <div class="card-description-bullet">
-                                <li>🎬 <span class="highlight">Database Architecture</span>: Created normalized schema for 100+ movie records with actors, genres, and ratings</li>
-                                <li>⚡ <span class="highlight">Optimized Queries</span>: Improved search performance by 10% through indexing and query optimization</li>
-                                <li>🔍 <span class="highlight">Advanced Features</span>: Implemented stored procedures for complex analytics and recommendations</li>
-                            </div>
-                            <p class="card-tech">
-                                <span class="accent">Learning Milestones: </span>PostgreSQL • pgAdmin • Python (psycopg2) • ERD Design
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <h3 class="card-title">AI Pathfinding</h3>
-                            <a href="https://github.com/Washburn-CIS/cm331-programming-portfolio-JamesTanasyah" target="_blank" rel="noopener noreferrer">
-                                <img class="card-icon" src="AI.png" alt="Project icon">
-                            </a>
-                        </div>
-                        <div class="card-meta">
-                            <span style="color: #f0f0f0;">Python AI Project |<br> Algorithm Vis.</span>
-                            <span>Spring24</span>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-description">
-                                Developed an interactive simulator comparing <strong>pathfinding algorithms</strong>:
-                            </p>
-                            <div class="card-description-bullet">
-                                <li>🧭 <span class="highlight">Algorithm Implementation</span>: Built A*, Dijkstra's, and Greedy BFS with Python</li>
-                                <li>🖥️ <span class="highlight">GUI Development</span>: Created visualization toolkit using PyGame/Tkinter</li>
-                                <li>📊 <span class="highlight">Performance Analysis</span>: Compared path efficiency and computation time across algorithms</li>
-                            </div>
-                            <p class="card-description">
-                                <em>(Click the icon for more)</em>
-                            </p>
-                            <p class="card-tech">
-                                <span class="accent">Learning Milestones: </span>Python • PyGame • NumPy • Matplotlib (for analytics)
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <h3 class="card-title">Cross Data Recovery</h3>
-                            <img class="card-icon" src="data.png" alt="Project icon">
-                        </div>
-                        <div class="card-meta">
-                            <span style="color: #f0f0f0;">Digital Forensics |<br> Research</span>
-                            <span>Spring24</span>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-description">
-                                Researched <strong>data recovery techniques</strong> for multiple operating systems:
-                            </p>
-                            <div class="card-description-bullet">
-                                <li>💾 <span class="highlight">Multi-OS Recovery</span>: Successfully recovered files from Windows NTFS, macOS HFS+, and Linux EXT4 systems</li>
-                                <li>🔍 <span class="highlight">Forensic Tools</span>: Utilized Autopsy, FTK Imager, and ddrescue for disk analysis</li>
-                                <li>🛡️ <span class="highlight">USB Forensics</span>: Recovered corrupted data from old USB devices with varying file systems</li>
-                            </div>
-                            <p class="card-tech">
-                                <span class="accent">Learning Milestones: </span>Autopsy • FTK Imager • ddrescue • Hex Editors • Write-blockers
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <h3 class="card-title">RESTful API Service</h3>
-                            <img class="card-icon" src="GeoLocator.png" alt="Project icon">
-                        </div>
-                        <div class="card-meta">
-                            <span style="color: #f0f0f0;">Software Engineering |<br> Web Services</span>
-                            <span>Fall23</span>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-description">
-                                Designed and implemented a scalable <strong>web API service</strong> with full lifecycle management:
-                            </p>
-                            <div class="card-description-bullet">
-                                <li>🌐 <span class="highlight">RESTful Design</span>: Developed 2+ API endpoints following REST principles with proper HTTP verbs</li>
-                                <li>🔐 <span class="highlight">Secure Authentication</span>: Implemented JWT token-based auth with role-based access control</li>
-                                <li>📦 <span class="highlight">Database Integration</span>: Connected to SQLite with efficient ORM mapping and query optimization</li>
-                            </div>
-                            <p class="card-tech">
-                                <span class="accent">Learning Milestones: </span>Node.js • OpenAPI • Postman • JWT • SQLite
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <h3 class="card-title">In Working Progress</h3>
-                            <img class="card-icon" src="WIP.png" alt="WIP icon">
-                        </div>
-                        <div class="card-meta">
-                            <span style="color: #f0f0f0;">Personal Assistant |<br> AI Persona</span>
-                            <span>Grad26</span>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-description">
-                                Build a locally hosted AI companion that securely manages PI, learns from user activity, and provides intelligent assistance.
-                            </p>
-                            <div class="card-description-bullet">
-                                <li>🔐 <span class="highlight">Local AI Repository</span> Personal knowledge base stored entirely on-device with transparent indexing and retrieval.</li>
-                                <li>💾 <span class="highlight">Personal Data Hub</span> Securely organize schedules, finances, documents, notes, photos, and health records without cloud storage.</li>
-                                <li>📱 <span class="highlight">Intelligent Assistant</span> Detect habits, summarize updates, provide reminders, answer questions, and automate daily workflows using explainable AI.</li>
-                            </div>
-                            <p class="card-tech">
-                                <span class="accent">Learning Milestones: </span>Local LLM deployment • Retrieval-Augmented Generation (RAG) • Mobile development • Vector databases • Personal knowledge management • AI agents • Explainable AI • Secure local storage • Pattern recognition
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <h3 class="card-title">In Working Progress</h3>
-                            <img class="card-icon" src="lang.png" alt="language icon">
-                        </div>
-                        <div class="card-meta">
-                            <span style="color: #f0f0f0;">Language Learning |<br> Polyglot Training</span>
-                            <span>Grad26</span>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-description">
-                                A research-driven language learning platform exploring multilingual knowledge representation, language acquisition, and human-AI interaction, serving as a foundation for future multilingual LLM applications.
-                            </p>
-                            <div class="card-description-bullet">
-                                <li>🌍 <span class="highlight">Multilingual Knowledge Graph</span> Explore how vocabulary, grammar, and concepts connect across languages rather than learning each language in isolation.</li>
-                                <li>🧠 <span class="highlight">Language Acquisition Research</span> Document learning strategies, comprehension patterns, and cognitive models to refine a personalized multilingual framework.</li>
-                                <li>🤖 <span class="highlight">Future AI Integration</span> Build the educational foundation for multilingual AI assistants capable of understanding, explaining, and reasoning across languages.</li>
-                            </div>
-                            <p class="card-tech">
-                                <span class="accent">Learning Milestones: </span>Second Language Acquisition • Linguistics • Computational Linguistics • Natural Language Processing • Transformer Architectures • Tokenization • Embeddings • Vector Search • Retrieval-Augmented Generation (RAG) • Multilingual LLMs • Knowledge Representation
-                            </p>
-                        </div>
-                    </div>
-                </div>
-                <div class="project-card">
-                    <div class="card-content">
-                        <div class="card-header">
-                            <h3 class="card-title">In Working Progress</h3>
-                            <img class="card-icon" src="UTD.png" alt="UTD icon">
-                        </div>
-                        <div class="card-meta">
-                            <span style="color: #f0f0f0;">Up To Date Info. |<br> AI organizer</span>
-                            <span>Grad26</span>
-                        </div>
-                        <div class="card-body">
-                            <p class="card-description">
-                                Build an AI-powered research platform that continuously discovers, verifies, and summarizes information from online sources into organized, up-to-date knowledge repositories.
-                            </p>
-                            <div class="card-description-bullet">
-                                <li>🔎 <span class="highlight">Autonomous Information Gathering</span> Search multiple trusted sources to collect relevant information based on user-defined research topics.</li>
-                                <li>📚 <span class="highlight">Knowledge Compilation</span> Organize findings into structured summaries with citations, timelines, and source references.</li>
-                                <li>🔄 <span class="highlight">Continuous Monitoring</span> Track evolving topics and automatically surface meaningful updates as new information becomes available.</li>
-                            </div>
-                            <p class="card-tech">
-                                <span class="accent">Learning Milestones: </span>AI agents • Web search • Retrieval-Augmented Generation (RAG) • Information retrieval • Knowledge graphs • Data pipelines • Source verification • Web scraping • APIs • Summarization • Research automation
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div><br><br>
-            <h2 class="stat-title" style="text-align: center;">Professional Experience & Services</h2><br>
-            <div class="services-experience">
-                <div class="scroll-container">
-                    <div class="scroll-section work-experience">
-                        <h3 class="subsection-title">Work Experience →</h3>
-                        <div class="horizontal-scroll">
-                            <div class="project-container">
-                                <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
-                url('WU.png') center/cover no-repeat;">
+            <div class="big-card">
+                <details id="projects" open>
+                    <summary>
+                        <br><h2 class="stat-title" style="text-align: center;">PROJECTS</h2><br>
+                    </summary>
+                
+                    <div class="projects-grid">
+                        <div class="project-card">
+                            <div class="card-content">
+                                <br><div class="card-header">
+                                    <h3 class="card-title">HabitGuard</h3>
+                                    <a href="https://github.com/jvillanueva3651/HabitGuard" target="_blank" rel="noopener noreferrer">
+                                        <img class="card-icon" src="habit_guard.png" alt="Project icon">
+                                    </a>
                                 </div>
-                                <div class="work-card">
-                                    <div class="card-content">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Athletic Events Operations Staff</h3>
+                                <div class="card-meta">
+                                    <span style="color: #f0f0f0;">Final Capstone |<br> Mobile App</span>
+                                    <span>Spring25</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-description">
+                                        Android app developed through Android Studio, marking my transition into <strong>mobile development</strong>. This project helped me:
+                                    </p>
+                                    <div class="card-description-bullet">
+                                        <li>📱 Basic <span class="highlight">Kotlin</span> hands-on implementation</li>
+                                        <li>🔐 Integrated <span class="highlight">Firebase</span> authentication & DB backend</li>
+                                        <li>🔄 Applied <span class="highlight">software engineering</span> sprint from requirements to deployment</li>
+                                        <li>📈 Delivered a <span class="highlight">functional MVP</span> tracking spending habits</li>
+                                    </div>
+                                    <p class="card-description">
+                                        <em>(Click the icon for more)</em>
+                                    </p>
+                                    <p class="card-tech">
+                                        <span class="accent">Learning Milestones: </span>Android Studio • Kotlin • Firebase Auth/Firestore DB • UI Design
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-content">
+                                <br><div class="card-header">
+                                    <h3 class="card-title">Wearable's UI/UX on Mental Health</h3>
+                                    <a href="https://www.iacis.org/iis/2025/2_iis_2025_387-401.pdf" target="_blank" rel="noopener noreferrer">
+                                        <img class="card-icon" src="IACIS.png" alt="Project icon">
+                                    </a>
+                                </div>
+                                <div class="card-meta">
+                                    <span style="color: #f0f0f0;">Published Research |<br> IACIS Conference</span>
+                                    <span>Spring25</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-description">
+                                        <strong>Peer-reviewed publication</strong> exploring how <strong>wearable UI/UX design</strong> can address <strong>mental health</strong> challenges in tech. Key contributions:
+                                    </p>
+                                    <div class="card-description-bullet">
+                                        <li>👥 Led user studies with <span class="highlight">100+ participants</span> to identify anxiety-reducing interface patterns</li>
+                                        <li>📝 <span class="highlight">International publication</span> as part of International  Association for Computer Information Systems <span class="highlight">(IACIS)</span> conference proceedings</li>
+                                        <li>💡 Bridged computer science and mental health perspectives through <span class="highlight">human-computer interaction (HCI)</span> research</li>
+                                    </div>
+                                    <p class="card-description">
+                                        <em>(Click the icon for more)</em>
+                                    </p>
+                                    <p class="card-tech">
+                                        <span class="accent">Learning Milestones: </span>Research Procedure • Peer Review • UI/UX Design • Mental Health • Survey Analysis
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-content">
+                                <br><div class="card-header">
+                                    <h3 class="card-title">Epidemiological Spread Simulation</h3>
+                                    <a href="https://drive.google.com/drive/folders/1LUA-w7OS4nCBs2Dd1SqgLtwrMoxuup8y?usp=drive_link" target="_blank" rel="noopener noreferrer">
+                                        <img class="card-icon" src="VBA.png" alt="Project icon">
+                                    </a>
+                                </div>
+                                <div class="card-meta">
+                                    <span style="color: #f0f0f0;">Data Modeling |<br> VBA/Excel</span>
+                                    <span>Spring25</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-description">
+                                        Developed a dynamic infection spread <strong>data model</strong> demonstrating:
+                                    </p>
+                                    <div class="card-description-bullet">
+                                        <li>📊 <span class="highlight">Automated data processing</span> of population health metrics using VBA macros</li>
+                                        <li>🔄 <span class="highlight">SIRD simulations</span> to predict outbreak scenarios</li>
+                                        <li>📈 <span class="highlight">Interactive dashboards</span> visualizing transmission rates and containment strategies</li>
+                                    </div>
+                                    <p class="card-description">
+                                        <em>(Click the icon for more)</em>
+                                    </p>
+                                    <p class="card-tech">
+                                        <span class="accent">Learning Milestones: </span>Big Data • Live Data • Visual Basic • Automation
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-content">
+                                <br><div class="card-header">
+                                    <h3 class="card-title">Handedness Classification</h3>
+                                    <a href="https://github.com/FDCub4/CM-332" target="_blank" rel="noopener noreferrer">
+                                        <img class="card-icon" src="handedness.png" alt="Project icon">
+                                    </a>
+                                </div>
+                                <div class="card-meta">
+                                    <span style="color: #f0f0f0;">Machine Learning |<br> Project</span>
+                                    <span>FA23/SP24</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-description">
+                                        Designed and implemented a <strong>convolutional neural network</strong> to analyze hand dominance from image data:
+                                    </p>
+                                    <div class="card-description-bullet">
+                                        <li>🖐️ <span class="highlight">Data Mining</span>: Compiled and labeled 150+ hand images for training</li>
+                                        <li>🧠 <span class="highlight">Model Architecture</span>: Custom CNN achieving 85% right-handed validation accuracy showing inherent class imbalance</li>
+                                        <li>🔍 <span class="highlight">Feature Analysis</span>: Identified key markers for left/right-hand dominance</li>
+                                    </div>
+                                    <p class="card-description">
+                                        <em>(Click the icon for more)</em>
+                                    </p>
+                                    <p class="card-tech">
+                                        <span class="accent">Learning Milestones: </span>Data Mining • Image Processing • Convolutional Neural Networks • TensorFlow • Python
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-content">
+                                <br><div class="card-header">
+                                    <h3 class="card-title">Sandbox Malware Analysis</h3>
+                                    <img class="card-icon" src="cuckoo.jpg" alt="Project icon">
+                                </div>
+                                <div class="card-meta">
+                                    <span style="color: #f0f0f0;">Cybersecurity Res. |<br> ComptTIA Security+</span>
+                                    <span>Spring24</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-description">
+                                        Conducted comprehensive <strong>malware analysis</strong> using Cuckoo Sandbox environment:
+                                    </p>
+                                    <div class="card-description-bullet">
+                                        <li>🛡️ <span class="highlight">Purple Team Methodology</span>: Combined offensive and defensive techniques to analyze Morris Worm and Code Red malware samples</li>
+                                        <li>🔍 <span class="highlight">Behavioral Analysis</span>: Monitored API calls, registry changes, and network traffic patterns</li>
+                                        <li>📊 <span class="highlight">Threat Reporting</span>: Documented IOC's (Indicators of Compromise) and mitigation strategies</li>
+                                    </div>
+                                    <p class="card-tech">
+                                        <span class="accent">Learning Milestones: </span>Cuckoo Sandbox • Wireshark • YARA • Volatility • CompTIA Security+
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-content">
+                                <br><div class="card-header">
+                                    <h3 class="card-title">Movie System</h3>
+                                    <img class="card-icon" src="movieDB.png" alt="Project icon">
+                                </div>
+                                <div class="card-meta">
+                                    <span style="color: #f0f0f0;">DB Management |<br> PostgreSQL</span>
+                                    <span>Spring24</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-description">
+                                        Designed and implemented a comprehensive movie <strong>database system</strong> to manage and query film data effectively:
+                                    </p>
+                                    <div class="card-description-bullet">
+                                        <li>🎬 <span class="highlight">Database Architecture</span>: Created normalized schema for 100+ movie records with actors, genres, and ratings</li>
+                                        <li>⚡ <span class="highlight">Optimized Queries</span>: Improved search performance by 10% through indexing and query optimization</li>
+                                        <li>🔍 <span class="highlight">Advanced Features</span>: Implemented stored procedures for complex analytics and recommendations</li>
+                                    </div>
+                                    <p class="card-tech">
+                                        <span class="accent">Learning Milestones: </span>PostgreSQL • pgAdmin • Python (psycopg2) • ERD Design
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-content">
+                                <br><div class="card-header">
+                                    <h3 class="card-title">AI Pathfinding</h3>
+                                    <a href="https://github.com/Washburn-CIS/cm331-programming-portfolio-JamesTanasyah" target="_blank" rel="noopener noreferrer">
+                                        <img class="card-icon" src="AI.png" alt="Project icon">
+                                    </a>
+                                </div>
+                                <div class="card-meta">
+                                    <span style="color: #f0f0f0;">Python AI Project |<br> Algorithm Vis.</span>
+                                    <span>Spring24</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-description">
+                                        Developed an interactive simulator comparing <strong>pathfinding algorithms</strong>:
+                                    </p>
+                                    <div class="card-description-bullet">
+                                        <li>🧭 <span class="highlight">Algorithm Implementation</span>: Built A*, Dijkstra's, and Greedy BFS with Python</li>
+                                        <li>🖥️ <span class="highlight">GUI Development</span>: Created visualization toolkit using PyGame/Tkinter</li>
+                                        <li>📊 <span class="highlight">Performance Analysis</span>: Compared path efficiency and computation time across algorithms</li>
+                                    </div>
+                                    <p class="card-description">
+                                        <em>(Click the icon for more)</em>
+                                    </p>
+                                    <p class="card-tech">
+                                        <span class="accent">Learning Milestones: </span>Python • PyGame • NumPy • Matplotlib (for analytics)
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-content">
+                                <br><div class="card-header">
+                                    <h3 class="card-title">Cross Data Recovery</h3>
+                                    <img class="card-icon" src="data.png" alt="Project icon">
+                                </div>
+                                <div class="card-meta">
+                                    <span style="color: #f0f0f0;">Digital Forensics |<br> Research</span>
+                                    <span>Spring24</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-description">
+                                        Researched <strong>data recovery techniques</strong> for multiple operating systems:
+                                    </p>
+                                    <div class="card-description-bullet">
+                                        <li>💾 <span class="highlight">Multi-OS Recovery</span>: Successfully recovered files from Windows NTFS, macOS HFS+, and Linux EXT4 systems</li>
+                                        <li>🔍 <span class="highlight">Forensic Tools</span>: Utilized Autopsy, FTK Imager, and ddrescue for disk analysis</li>
+                                        <li>🛡️ <span class="highlight">USB Forensics</span>: Recovered corrupted data from old USB devices with varying file systems</li>
+                                    </div>
+                                    <p class="card-tech">
+                                        <span class="accent">Learning Milestones: </span>Autopsy • FTK Imager • ddrescue • Hex Editors • Write-blockers
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-content">
+                                <br><div class="card-header">
+                                    <h3 class="card-title">RESTful API Service</h3>
+                                    <img class="card-icon" src="GeoLocator.png" alt="Project icon">
+                                </div>
+                                <div class="card-meta">
+                                    <span style="color: #f0f0f0;">Software Engineering |<br> Web Services</span>
+                                    <span>Fall23</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-description">
+                                        Designed and implemented a scalable <strong>web API service</strong> with full lifecycle management:
+                                    </p>
+                                    <div class="card-description-bullet">
+                                        <li>🌐 <span class="highlight">RESTful Design</span>: Developed 2+ API endpoints following REST principles with proper HTTP verbs</li>
+                                        <li>🔐 <span class="highlight">Secure Authentication</span>: Implemented JWT token-based auth with role-based access control</li>
+                                        <li>📦 <span class="highlight">Database Integration</span>: Connected to SQLite with efficient ORM mapping and query optimization</li>
+                                    </div>
+                                    <p class="card-tech">
+                                        <span class="accent">Learning Milestones: </span>Node.js • OpenAPI • Postman • JWT • SQLite
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-content">
+                                <br><div class="card-header">
+                                    <h3 class="card-title">In Working Progress</h3>
+                                    <img class="card-icon" src="WIP.png" alt="WIP icon">
+                                </div>
+                                <div class="card-meta">
+                                    <span style="color: #f0f0f0;">Personal Assistant |<br> AI Persona</span>
+                                    <span>Grad26</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-description">
+                                        Build a locally hosted AI companion that securely manages PI, learns from user activity, and provides intelligent assistance.
+                                    </p>
+                                    <div class="card-description-bullet">
+                                        <li>🔐 <span class="highlight">Local AI Repository</span> Personal knowledge base stored entirely on-device with transparent indexing and retrieval.</li>
+                                        <li>💾 <span class="highlight">Personal Data Hub</span> Securely organize schedules, finances, documents, notes, photos, and health records without cloud storage.</li>
+                                        <li>📱 <span class="highlight">Intelligent Assistant</span> Detect habits, summarize updates, provide reminders, answer questions, and automate daily workflows using explainable AI.</li>
+                                    </div>
+                                    <p class="card-tech">
+                                        <span class="accent">Learning Milestones: </span>Local LLM deployment • Retrieval-Augmented Generation (RAG) • Mobile development • Vector databases • Personal knowledge management • AI agents • Explainable AI • Secure local storage • Pattern recognition
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-content">
+                                <br><div class="card-header">
+                                    <h3 class="card-title">In Working Progress</h3>
+                                    <img class="card-icon" src="lang.png" alt="language icon">
+                                </div>
+                                <div class="card-meta">
+                                    <span style="color: #f0f0f0;">Language Learning |<br> Polyglot Training</span>
+                                    <span>Grad26</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-description">
+                                        A research-driven language learning platform exploring multilingual knowledge representation, language acquisition, and human-AI interaction, serving as a foundation for future multilingual LLM applications.
+                                    </p>
+                                    <div class="card-description-bullet">
+                                        <li>🌍 <span class="highlight">Multilingual Knowledge Graph</span> Explore how vocabulary, grammar, and concepts connect across languages rather than learning each language in isolation.</li>
+                                        <li>🧠 <span class="highlight">Language Acquisition Research</span> Document learning strategies, comprehension patterns, and cognitive models to refine a personalized multilingual framework.</li>
+                                        <li>🤖 <span class="highlight">Future AI Integration</span> Build the educational foundation for multilingual AI assistants capable of understanding, explaining, and reasoning across languages.</li>
+                                    </div>
+                                    <p class="card-tech">
+                                        <span class="accent">Learning Milestones: </span>Second Language Acquisition • Linguistics • Computational Linguistics • Natural Language Processing • Transformer Architectures • Tokenization • Embeddings • Vector Search • Retrieval-Augmented Generation (RAG) • Multilingual LLMs • Knowledge Representation
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-card">
+                            <div class="card-content">
+                                <br><div class="card-header">
+                                    <h3 class="card-title">In Working Progress</h3>
+                                    <img class="card-icon" src="UTD.png" alt="UTD icon">
+                                </div>
+                                <div class="card-meta">
+                                    <span style="color: #f0f0f0;">Up To Date Info. |<br> AI organizer</span>
+                                    <span>Grad26</span>
+                                </div>
+                                <div class="card-body">
+                                    <p class="card-description">
+                                        Build an AI-powered research platform that continuously discovers, verifies, and summarizes information from online sources into organized, up-to-date knowledge repositories.
+                                    </p>
+                                    <div class="card-description-bullet">
+                                        <li>🔎 <span class="highlight">Autonomous Information Gathering</span> Search multiple trusted sources to collect relevant information based on user-defined research topics.</li>
+                                        <li>📚 <span class="highlight">Knowledge Compilation</span> Organize findings into structured summaries with citations, timelines, and source references.</li>
+                                        <li>🔄 <span class="highlight">Continuous Monitoring</span> Track evolving topics and automatically surface meaningful updates as new information becomes available.</li>
+                                    </div>
+                                    <p class="card-tech">
+                                        <span class="accent">Learning Milestones: </span>AI agents • Web search • Retrieval-Augmented Generation (RAG) • Information retrieval • Knowledge graphs • Data pipelines • Source verification • Web scraping • APIs • Summarization • Research automation
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </details>
+            </div>
+            
+            <!-- Services & Experience Section -->
+            <div class="big-card">
+                <details id="services" open>
+                    <summary>
+                        <h2 class="stat-title" style="text-align: center;">Professional Experience & Services</h2><br>
+                    </summary>
+
+                    <div class="services-experience">
+                        <div class="scroll-container">
+                            <!-- Work Experience Section -->
+                            <div class="scroll-section work-experience">
+                                <h3 class="subsection-title">Work Experience →</h3>
+                                <div class="horizontal-scroll">
+                                    <div class="project-container">
+                                        <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
+                        url('WU.png') center/cover no-repeat;">
                                         </div>
-                                        <div class="card-meta">
-                                            <span style="color: #f0f0f0;">Athletics Dept.</span>
-                                            <span>2.5 Years</span>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-description">
-                                                Key contributor to smooth execution of NCAA Division II athletic events serving 500+ attendees:
-                                            </p>
-                                            <div class="card-description-bullet">
-                                                <li>🎟️ <span class="highlight">Systems Coordination</span>: Managed ticket verification and access control systems for 10+ home games per season</li>
-                                                <li>🛡️ <span class="highlight">Operational Support</span>: Collaborated with security teams to enforce safety protocols during high-traffic events</li>
-                                                <li>⏱️ <span class="highlight">Process Efficiency</span>: Streamlined patron flow through coordinated entry procedures</li>
+                                        <div class="work-card">
+                                            <div class="card-content">
+                                                <div class="card-header">
+                                                    <h3 class="card-title">Athletic Events Operations Staff</h3>
+                                                </div>
+                                                <div class="card-meta">
+                                                    <span style="color: #f0f0f0;">Athletics Dept.</span>
+                                                    <span>2.5 Years</span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-description">
+                                                        Key contributor to smooth execution of NCAA Division II athletic events serving 500+ attendees:
+                                                    </p>
+                                                    <div class="card-description-bullet">
+                                                        <li>🎟️ <span class="highlight">Systems Coordination</span>: Managed ticket verification and access control systems for 10+ home games per season</li>
+                                                        <li>🛡️ <span class="highlight">Operational Support</span>: Collaborated with security teams to enforce safety protocols during high-traffic events</li>
+                                                        <li>⏱️ <span class="highlight">Process Efficiency</span>: Streamlined patron flow through coordinated entry procedures</li>
+                                                    </div>
+                                                    <p class="card-tech">
+                                                        <span class="accent">Learning Milestones: </span>High-pressure environment management • Attention to detail • Team coordination • Customer service excellence
+                                                    </p>
+                                                </div>
                                             </div>
-                                            <p class="card-tech">
-                                                <span class="accent">Learning Milestones: </span>High-pressure environment management • Attention to detail • Team coordination • Customer service excellence
-                                            </p>
+                                        </div>
+                                    </div>
+                                    <div class="project-container">
+                                        <div class="work-card">
+                                            <div class="card-content">
+                                                <div class="card-header">
+                                                    <h3 class="card-title">Department Assistant & CIS Tutor</h3>
+                                                </div>
+                                                <div class="card-meta">
+                                                    <span style="color: #f0f0f0;">Computer Information Science Dept.</span>
+                                                    <span>1.5 Years</span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-description">
+                                                        Dual-role position combining administrative support and technical assistance for the Computer Science department:
+                                                    </p>
+                                                    <div class="card-description-bullet">
+                                                        <li>💻 <span class="highlight">Technical Support</span>: Assisted peers and students with software/hardware issues</li>
+                                                        <li>📋 <span class="highlight">Tech-Ambassador</span>: Fielded 10+ daily inquiries from students/other about department resources and CS course inquiries</li>
+                                                        <li>💡 <span class="highlight">Tech Environment Exposure</span>: Gained familiarity with CS department operations, tools, and academic pathways</li>
+                                                    </div>
+                                                    <p class="card-tech">
+                                                        <span class="accent">Learning Milestones: </span>Technical communication • Problem-solving • Database navigation • Academic workflow understanding
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
+                        url('WU.png') center/cover no-repeat;">
+                                        </div>
+                                    </div>
+                                    <div class="project-container">
+                                        <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
+                        url('WU.png') center/cover no-repeat;">
+                                        </div>
+                                        <div class="work-card">
+                                            <div class="card-content">
+                                                <div class="card-header">
+                                                    <h3 class="card-title">Student Development Officer</h3>
+                                                </div>
+                                                <div class="card-meta">
+                                                    <span style="color: #f0f0f0;">Alumni Association and Foundation</span>
+                                                    <span>6 months</span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-description">
+                                                        Supported the Alumni Association and Foundation in fostering alumni and donor engagement through outreach, fundraising calls, and confidential data management, while assisting with administrative and event-related initiatives.
+                                                    </p>
+                                                    <div class="card-description-bullet">
+                                                        <li>📞 <span class="highlight">Alumni Engagement</span>: Engaged with alumni and donors through professional phone outreach, strengthening long-term relationships and fostering continued university support.</li>
+                                                        <li>📊 <span class="highlight">Fundraising Support</span>: Assisted in securing donations by effectively communicating fundraising goals and the impact of giving, contributing to the success of annual campaigns.</li>
+                                                        <li>💾 <span class="highlight">Data Management</span>: Recorded and updated donor interactions and contributions in foundation databases with accuracy, supporting efficient tracking and reporting.</li>
+                                                        <li>🤝 <span class="highlight">Interpersonal Skills</span>: Demonstrated strong interpersonal skills by building rapport with diverse alumni groups, enhancing alumni engagement initiatives.</li>
+                                                        <li>🎨 <span class="highlight">Event Coordination</span>: Supported event coordination and administrative functions, contributing to the smooth execution of alumni and fundraising programs.</li>
+                                                        <li>💼 <span class="highlight">Team Collaboration</span>: Collaborated with team members to achieve departmental fundraising goals, demonstrating adaptability and commitment to the mission of the foundation.</li>
+                                                    </div>
+                                                    <p class="card-tech">
+                                                        <span class="accent">Learning Milestones: </span>Alumni Relations • Fundraising Communication • CRM Data Management • Event Coordination
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-container">
+                                        <div class="work-card">
+                                            <div class="card-content">
+                                                <div class="card-header">
+                                                    <h3 class="card-title">Peer Educator for International Students</h3>
+                                                </div>
+                                                <div class="card-meta">
+                                                    <span style="color: #f0f0f0;">International Program</span>
+                                                    <span>6 months</span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-description">
+                                                        Served as a Peer Educator supporting international students by providing guidance during their transition to campus life, fostering academic and social success, and promoting global awareness within the university community:
+                                                    </p>
+                                                    <div class="card-description-bullet">
+                                                        <li>📞 <span class="highlight">Welcoming New Students:</span> Assisted and welcomed new international students, supporting their smooth transition to campus life.</li>
+                                                        <li>📚 <span class="highlight">Academic Support:</span> Helped students adjust to new academic and cultural environments, promoting personal and academic success.</li>
+                                                        <li>🌐 <span class="highlight">Global Awareness:</span> Created opportunities for student involvement in campus life while fostering global awareness across the university.</li>
+                                                    </div>
+                                                    <p class="card-tech">
+                                                        <span class="accent">Learning Milestones: </span>Cross-cultural communication • Student mentorship • Program coordination • Global awareness promotion
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
+                        url('WU.png') center/cover no-repeat;">
+                                        </div>
+                                    </div>
+                                    <div class="project-container">
+                                        <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
+                        url('WU.png') center/cover no-repeat;">
+                                        </div>
+                                        <div class="work-card">
+                                            <div class="card-content">
+                                                <div class="card-header">
+                                                    <h3 class="card-title">International Summer Institute Program Assistant</h3>
+                                                </div>
+                                                <div class="card-meta">
+                                                    <span style="color: #f0f0f0;">SAKAE International Summer Institute</span>
+                                                    <span>3 months</span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-description">
+                                                        Key contributor to a 6-week international academic program serving 15+ participants from Japan:
+                                                    </p>
+                                                    <div class="card-description-bullet">
+                                                        <li>🌍 <span class="highlight">Cultural Liaison</span>: Facilitated cross-cultural communication between international students and local</li>
+                                                        <li>📅 <span class="highlight">Program Logistics</span>: Coordinated daily schedules, transportation, and special events with satisfying rating</li>
+                                                        <li>💬 <span class="highlight">Student Support</span>: Served as primary contact for participant inquiries, resolving many logistical issues</li>
+                                                    </div>
+                                                    <p class="card-tech">
+                                                        <span class="accent">Learning Milestones: </span>Intercultural Communication • Event Planning • Crisis Management • Multilingual Coordination
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="project-container">
+                                        <div class="work-card">
+                                            <div class="card-content">
+                                                <div class="card-header">
+                                                    <h3 class="card-title">Mathematics Instructional Specialist</h3>
+                                                </div>
+                                                <div class="card-meta">
+                                                    <span style="color: #f0f0f0;">Sampoerna University | STEM Education</span>
+                                                    <span>8 months</span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-description">
+                                                        🏆 <strong>"Best Dedication" Award</strong> for teaching excellence
+                                                        Delivered advanced mathematics instruction with measurable results:
+                                                    </p>
+                                                    <div class="card-description-bullet">
+                                                        <li>📚 <span class="highlight">Calculus Instruction</span>: Taught 10+ students across Calculus I & II</li>
+                                                        <li>✍️ <span class="highlight">Test Preparation</span>: Developed specialized TBE Accuplacer prep materials</li>
+                                                        <li>💻 <span class="highlight">Technical Teaching</span>: Created digital learning tools using graphing software and collaboration tools</li>
+                                                    </div>
+                                                    <p class="card-tech">
+                                                        <span class="accent">Learning Milestones: </span>Analytical problem-solving • Technical documentation • Data-driven instruction • Mathematical modeling
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
+                        url('SU.jpg') center/cover no-repeat;">
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="project-container">
-                                <div class="work-card">
-                                    <div class="card-content">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Department Assistant & CIS Tutor</h3>
-                                        </div>
-                                        <div class="card-meta">
-                                            <span style="color: #f0f0f0;">Computer Information Science Dept.</span>
-                                            <span>1.5 Years</span>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-description">
-                                                Dual-role position combining administrative support and technical assistance for the Computer Science department:
-                                            </p>
-                                            <div class="card-description-bullet">
-                                                <li>💻 <span class="highlight">Technical Support</span>: Assisted peers and students with software/hardware issues</li>
-                                                <li>📋 <span class="highlight">Tech-Ambassador</span>: Fielded 10+ daily inquiries from students/other about department resources and CS course inquiries</li>
-                                                <li>💡 <span class="highlight">Tech Environment Exposure</span>: Gained familiarity with CS department operations, tools, and academic pathways</li>
+
+                            <!-- Services Section -->
+                            <div class="scroll-section services-offered">
+                                <h3 class="subsection-title", style="text-align: right;">← Services</h3>
+                                <div class="horizontal-scroll reverse">
+                                    <div class="project-container">
+                                        <div class="work-card">
+                                            <div class="card-content">
+                                                <div class="card-header">
+                                                    <h3 class="card-title">Multicultural Community Volunteer</h3>
+                                                </div>
+                                                <div class="card-meta">
+                                                    <span style="color: #f0f0f0;">Faith-Based Organizations</span>
+                                                    <span>4+ years</span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-description">
+                                                        Contributed 500+ service hours across diverse communities, developing cross-cultural competencies:
+                                                    </p>
+                                                    <div class="card-description-bullet">
+                                                        <li>🤝 <span class="highlight">Team Coordination</span>: Led volunteer teams of 5-15 members for community outreach programs</li>
+                                                        <li>💡 <span class="highlight">Problem-Solving</span>: Adapted services to meet unique needs of each community (urban/rural/suburban)</li>
+                                                        <li>📊 <span class="highlight">Event Planning</span>: Organized 3+ charitable events serving 20+ attendees each</li>
+                                                    </div>
+                                                    <p class="card-tech">
+                                                        <span class="accent">Outreach: </span>Topeka First Southern Baptist • Denver Hope Valley • NYC Graffiti 2 • KC City Union Mission • Philadelphia Square One • NYC Revival Life • Scranton Green Ridge
+                                                    </p>
+                                                    <p class="card-tech">
+                                                        <span class="accent">Skills: </span>Cross-cultural communication • Adaptability • Leadership • Community needs analysis
+                                                    </p>
+                                                </div>
                                             </div>
-                                            <p class="card-tech">
-                                                <span class="accent">Learning Milestones: </span>Technical communication • Problem-solving • Database navigation • Academic workflow understanding
-                                            </p>
+                                        </div>
+                                        <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
+                        url('James.Tanasyah.jpg') center/cover no-repeat;">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
-                url('WU.png') center/cover no-repeat;">
-                                </div>
-                            </div>
-                            <div class="project-container">
-                                <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
-                url('WU.png') center/cover no-repeat;">
-                                </div>
-                                <div class="work-card">
-                                    <div class="card-content">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Student Development Officer</h3>
+                                    <div class="project-container">
+                                        <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
+                        url('savannah.png') center/cover no-repeat;">
                                         </div>
-                                        <div class="card-meta">
-                                            <span style="color: #f0f0f0;">Alumni Association and Foundation</span>
-                                            <span>6 months</span>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-description">
-                                                Supported the Alumni Association and Foundation in fostering alumni and donor engagement through outreach, fundraising calls, and confidential data management, while assisting with administrative and event-related initiatives.
-                                            </p>
-                                            <div class="card-description-bullet">
-                                                <li>📞 <span class="highlight">Alumni Engagement</span>: Engaged with alumni and donors through professional phone outreach, strengthening long-term relationships and fostering continued university support.</li>
-                                                <li>📊 <span class="highlight">Fundraising Support</span>: Assisted in securing donations by effectively communicating fundraising goals and the impact of giving, contributing to the success of annual campaigns.</li>
-                                                <li>💾 <span class="highlight">Data Management</span>: Recorded and updated donor interactions and contributions in foundation databases with accuracy, supporting efficient tracking and reporting.</li>
-                                                <li>🤝 <span class="highlight">Interpersonal Skills</span>: Demonstrated strong interpersonal skills by building rapport with diverse alumni groups, enhancing alumni engagement initiatives.</li>
-                                                <li>🎨 <span class="highlight">Event Coordination</span>: Supported event coordination and administrative functions, contributing to the smooth execution of alumni and fundraising programs.</li>
-                                                <li>💼 <span class="highlight">Team Collaboration</span>: Collaborated with team members to achieve departmental fundraising goals, demonstrating adaptability and commitment to the mission of the foundation.</li>
+                                        <div class="work-card">
+                                            <div class="card-content">
+                                                <div class="card-header">
+                                                    <h3 class="card-title">Retail Operations Volunteer</h3>
+                                                </div>
+                                                <div class="card-meta">
+                                                    <span style="color: #f0f0f0;">Banana Ball Sports Event</span>
+                                                    <span>2025&26</span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-tech">
+                                                        <strong>Skills: </strong>Inventory Management • POS Systems • Sales Analytics
+                                                    </p>
+                                                </div>
                                             </div>
-                                            <p class="card-tech">
-                                                <span class="accent">Learning Milestones: </span>Alumni Relations • Fundraising Communication • CRM Data Management • Event Coordination
-                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="project-container">
-                                <div class="work-card">
-                                    <div class="card-content">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Peer Educator for International Students</h3>
-                                        </div>
-                                        <div class="card-meta">
-                                            <span style="color: #f0f0f0;">International Program</span>
-                                            <span>6 months</span>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-description">
-                                                Served as a Peer Educator supporting international students by providing guidance during their transition to campus life, fostering academic and social success, and promoting global awareness within the university community:
-                                            </p>
-                                            <div class="card-description-bullet">
-                                                <li>📞 <span class="highlight">Welcoming New Students:</span> Assisted and welcomed new international students, supporting their smooth transition to campus life.</li>
-                                                <li>📚 <span class="highlight">Academic Support:</span> Helped students adjust to new academic and cultural environments, promoting personal and academic success.</li>
-                                                <li>🌐 <span class="highlight">Global Awareness:</span> Created opportunities for student involvement in campus life while fostering global awareness across the university.</li>
+                                    <div class="project-container">
+                                        <div class="work-card">
+                                            <div class="card-content">
+                                                <div class="card-header">
+                                                    <h3 class="card-title">Digital Shelf Labeling Associate</h3>
+                                                </div>
+                                                <div class="card-meta">
+                                                    <span style="color: #f0f0f0;">Walmart Supercenter Store 1802</span>
+                                                    <span>2025</span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-tech">
+                                                        <strong>Skills: </strong>Equipment Handling • Dexterity • Team Training
+                                                    </p>
+                                                </div>
                                             </div>
-                                            <p class="card-tech">
-                                                <span class="accent">Learning Milestones: </span>Cross-cultural communication • Student mentorship • Program coordination • Global awareness promotion
-                                            </p>
+                                        </div>
+                                        <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
+                        url('wallmart.png') center/cover no-repeat;">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
-                url('WU.png') center/cover no-repeat;">
-                                </div>
-                            </div>
-                            <div class="project-container">
-                                <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
-                url('WU.png') center/cover no-repeat;">
-                                </div>
-                                <div class="work-card">
-                                    <div class="card-content">
-                                        <div class="card-header">
-                                            <h3 class="card-title">International Summer Institute Program Assistant</h3>
+                                    <div class="project-container">
+                                        <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
+                        url('TOTH.png') center/cover no-repeat;">
                                         </div>
-                                        <div class="card-meta">
-                                            <span style="color: #f0f0f0;">SAKAE International Summer Institute</span>
-                                            <span>3 months</span>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-description">
-                                                Key contributor to a 6-week international academic program serving 15+ participants from Japan:
-                                            </p>
-                                            <div class="card-description-bullet">
-                                                <li>🌍 <span class="highlight">Cultural Liaison</span>: Facilitated cross-cultural communication between international students and local</li>
-                                                <li>📅 <span class="highlight">Program Logistics</span>: Coordinated daily schedules, transportation, and special events with satisfying rating</li>
-                                                <li>💬 <span class="highlight">Student Support</span>: Served as primary contact for participant inquiries, resolving many logistical issues</li>
+                                        <div class="work-card">
+                                            <div class="card-content">
+                                                <div class="card-header">
+                                                    <h3 class="card-title">Hospitality Support Volunteer</h3>
+                                                </div>
+                                                <div class="card-meta">
+                                                    <span style="color: #f0f0f0;">Thunder Over the Heartland Airshow</span>
+                                                    <span>2024</span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-tech">
+                                                        <strong>Skills: </strong>Event Operations • Customer Service • Team Training
+                                                    </p>
+                                                </div>
                                             </div>
-                                            <p class="card-tech">
-                                                <span class="accent">Learning Milestones: </span>Intercultural Communication • Event Planning • Crisis Management • Multilingual Coordination
-                                            </p>
                                         </div>
                                     </div>
-                                </div>
-                            </div>
-                            <div class="project-container">
-                                <div class="work-card">
-                                    <div class="card-content">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Mathematics Instructional Specialist</h3>
-                                        </div>
-                                        <div class="card-meta">
-                                            <span style="color: #f0f0f0;">Sampoerna University | STEM Education</span>
-                                            <span>8 months</span>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-description">
-                                                🏆 <strong>"Best Dedication" Award</strong> for teaching excellence
-                                                Delivered advanced mathematics instruction with measurable results:
-                                            </p>
-                                            <div class="card-description-bullet">
-                                                <li>📚 <span class="highlight">Calculus Instruction</span>: Taught 10+ students across Calculus I & II</li>
-                                                <li>✍️ <span class="highlight">Test Preparation</span>: Developed specialized TBE Accuplacer prep materials</li>
-                                                <li>💻 <span class="highlight">Technical Teaching</span>: Created digital learning tools using graphing software and collaboration tools</li>
+                                    <div class="project-container">
+                                        <div class="work-card">
+                                            <div class="card-content">
+                                                <div class="card-header">
+                                                    <h3 class="card-title">Community Outreach Volunteer</h3>
+                                                </div>
+                                                <div class="card-meta">
+                                                    <span style="color: #f0f0f0;">Topeka Rescue Mission</span>
+                                                    <span>2025</span>
+                                                </div>
+                                                <div class="card-body">
+                                                    <p class="card-tech">
+                                                        <strong>Skills: </strong>Crisis Communication • Resource Coordination • Cultural Sensitivity
+                                                    </p>
+                                                </div>
                                             </div>
-                                            <p class="card-tech">
-                                                <span class="accent">Learning Milestones: </span>Analytical problem-solving • Technical documentation • Data-driven instruction • Mathematical modeling
-                                            </p>
+                                        </div>
+                                        <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
+                        url('trm.png') center/cover no-repeat;">
                                         </div>
                                     </div>
-                                </div>
-                                <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
-                url('SU.jpg') center/cover no-repeat;">
                                 </div>
                             </div>
                         </div>
                     </div>
-                    <div class="scroll-section services-offered">
-                        <h3 class="subsection-title", style="text-align: right;">← Services</h3>
-                        <div class="horizontal-scroll reverse">
-                            <div class="project-container">
-                                <div class="work-card">
-                                    <div class="card-content">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Multicultural Community Volunteer</h3>
-                                        </div>
-                                        <div class="card-meta">
-                                            <span style="color: #f0f0f0;">Faith-Based Organizations</span>
-                                            <span>4+ years</span>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-description">
-                                                Contributed 500+ service hours across diverse communities, developing cross-cultural competencies:
-                                            </p>
-                                            <div class="card-description-bullet">
-                                                <li>🤝 <span class="highlight">Team Coordination</span>: Led volunteer teams of 5-15 members for community outreach programs</li>
-                                                <li>💡 <span class="highlight">Problem-Solving</span>: Adapted services to meet unique needs of each community (urban/rural/suburban)</li>
-                                                <li>📊 <span class="highlight">Event Planning</span>: Organized 3+ charitable events serving 20+ attendees each</li>
-                                            </div>
-                                            <p class="card-tech">
-                                                <span class="accent">Outreach: </span>Topeka First Southern Baptist • Denver Hope Valley • NYC Graffiti 2 • KC City Union Mission • Philadelphia Square One • NYC Revival Life • Scranton Green Ridge
-                                            </p>
-                                            <p class="card-tech">
-                                                <span class="accent">Skills: </span>Cross-cultural communication • Adaptability • Leadership • Community needs analysis
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
-                url('James.Tanasyah.jpg') center/cover no-repeat;">
-                                </div>
-                            </div>
-                            <div class="project-container">
-                                <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
-                url('savannah.png') center/cover no-repeat;">
-                                </div>
-                                <div class="work-card">
-                                    <div class="card-content">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Retail Operations Volunteer</h3>
-                                        </div>
-                                        <div class="card-meta">
-                                            <span style="color: #f0f0f0;">Banana Ball Sports Event</span>
-                                            <span>2025&26</span>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-tech">
-                                                <strong>Skills: </strong>Inventory Management • POS Systems • Sales Analytics
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-container">
-                                <div class="work-card">
-                                    <div class="card-content">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Digital Shelf Labeling Associate</h3>
-                                        </div>
-                                        <div class="card-meta">
-                                            <span style="color: #f0f0f0;">Walmart Supercenter Store 1802</span>
-                                            <span>2025</span>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-tech">
-                                                <strong>Skills: </strong>Equipment Handling • Dexterity • Team Training
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
-                url('wallmart.png') center/cover no-repeat;">
-                                </div>
-                            </div>
-                            <div class="project-container">
-                                <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
-                url('TOTH.png') center/cover no-repeat;">
-                                </div>
-                                <div class="work-card">
-                                    <div class="card-content">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Hospitality Support Volunteer</h3>
-                                        </div>
-                                        <div class="card-meta">
-                                            <span style="color: #f0f0f0;">Thunder Over the Heartland Airshow</span>
-                                            <span>2024</span>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-tech">
-                                                <strong>Skills: </strong>Event Operations • Customer Service • Team Training
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="project-container">
-                                <div class="work-card">
-                                    <div class="card-content">
-                                        <div class="card-header">
-                                            <h3 class="card-title">Community Outreach Volunteer</h3>
-                                        </div>
-                                        <div class="card-meta">
-                                            <span style="color: #f0f0f0;">Topeka Rescue Mission</span>
-                                            <span>2025</span>
-                                        </div>
-                                        <div class="card-body">
-                                            <p class="card-tech">
-                                                <strong>Skills: </strong>Crisis Communication • Resource Coordination • Cultural Sensitivity
-                                            </p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="ex-card" style="background: linear-gradient(to bottom, rgba(0,0,0,0.2), rgba(0,0,0,0.7)), 
-                url('trm.png') center/cover no-repeat;">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                </details>
             </div>
         </div>
+
         <!-- Right Panel - Now with properly rotated navigation -->
         <div class="right-panel" id="rightPanel">
             <div class="nav-menu">
@@ -1008,11 +1061,13 @@
                     <span class="nav-separator">|</span>
                     <a href="https://drive.google.com/file/d/1wINa1ACfiF4HwrW6Wg7XRFRW6YG6g8lC/view?usp=sharing" class="nav-item" target="_blank" rel="noopener noreferrer">Cover Letter</a>
                     <span class="nav-separator">|</span>
+                    <a href="#" class="nav-item" data-target="projects">Projects</a>
+                    <span class="nav-separator">|</span>
                     <a href="https://drive.google.com/file/d/163UXSuyKl-gW6qWFAbfK-6QgyVGBnmht/view?usp=sharing" class="nav-item" target="_blank" rel="noopener noreferrer">Resume</a>
                     <span class="nav-separator">|</span>
-                    <a href="https://drive.google.com/drive/folders/1SkeYVrzHE7SiFUr8x5InZII9NP5CNgMR?usp=sharing" class="nav-item" target="_blank" rel="noopener noreferrer">Paper</a>
+                    <a href="#" class="nav-item" data-target="services">Services</a>
                     <span class="nav-separator">|</span>
-                    <a href="tel:+13472421748" class="nav-item" target="_blank" rel="noopener noreferrer">Contact</a>
+                    <a href="https://drive.google.com/drive/folders/1SkeYVrzHE7SiFUr8x5InZII9NP5CNgMR?usp=sharing" class="nav-item" target="_blank" rel="noopener noreferrer">Paper</a>
                     <span class="nav-separator">|</span>
                     <!-- Language Selector -->
                     <div class="nav-item lang-menu">
@@ -1064,7 +1119,7 @@
             <div class="right-toggle-line"></div>
             <div class="right-toggle-line"></div>
         </div>
-    </div>
 
+    </div>
 </body>
 </html>
