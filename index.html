@@ -7,7 +7,7 @@
     <title>James | Curriculum Vitæ</title>
     
     <link rel="icon" type="image/png" 
-        href="pic.avif">
+        href="icons/pic.avif">
     <link rel="stylesheet" 
         href="style.css">
     <link rel="stylesheet" 
@@ -24,15 +24,15 @@
         <!-- Profile Header -->
             <div class="profile-header">
                 <img class="profile-pic" alt="Loading..."
-                    src="James.Tanasyah.jpg">
+                    src="icons/James.Tanasyah.jpg">
+                <button class="expand-btn" id="expandBtn">ⓘ</button>
                 <div class="profile-name">
-                    James Jordan Tanasyah <span id="statusIndicator" class="status-indicator online"></span>
+                    James Jordan Tanasyah 
+                    <span id="statusIndicator" class="status-indicator online"></span>
                 </div>
                 <div class="profile-title">
                     Entry-Level Developer
                 </div>
-                
-                <!-- Profile Contact -->
                 <div class="profile-contact">
                     <a href="https://github.com/JamesTanasyah" class="social-icon" target="_blank" rel="noopener noreferrer">
                         <i class="fab fa-github"></i>
@@ -53,50 +53,45 @@
                         <i class="fas fa-envelope"></i>
                     </a>
                 </div>
-                
-                <!-- Expand Button -->
-                <button class="expand-btn" id="expandBtn">ⓘ</button>
             </div>
 
         <!-- Profile Details -->
             <div class="profile-content" id="profileContent">
-            <!-- Info -->
-                <div class="profile-content-info">
-                    <div class="info-grid">
-                        <span style="color: var(--accent);">Residence:</span>
-                        <span>USA</span>
-                        <span style="color: var(--accent);">City:</span>
-                        <span>Los Angeles</span>
-                        <span style="color: var(--accent);">Age:</span>
-                        <span id="ageDisplay">Calculating...</span>
+            <!-- Info Grid -->
+                <div class="info-grid">
+                    <span style="color: var(--accent);">Residence:</span>
+                    <span>USA</span>
+                    <span style="color: var(--accent);">City:</span>
+                    <span>Los Angeles</span>
+                    <span style="color: var(--accent);">Age:</span>
+                    <span id="ageDisplay">Calculating...</span>
+                </div>
+            <!-- Achievements -->
+                <div class="info-section">
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-trophy"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Fantastic Achievement</h3>
+                            <p>
+                                <span class="info-label">3.8 in CIS</span> &
+                                Cumulative 3.7 GPA, Active Extracurricular
+                            </p>
+                        </div>
+                    </div>
+                    <div class="achievement-card">
+                        <div class="achievement-icon">
+                            <i class="fas fa-heartbeat"></i>
+                        </div>
+                        <div class="achievement-content">
+                            <h3>Characteristics</h3>
+                            <p>Passionate, Self-disciplined, Autodidact</p>
+                        </div>
                     </div>
                 </div>
-
-            <!-- Achivement -->
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-trophy"></i>
-                    </div>
-                    <div class="achievement-content">
-                        <h3>Fantastic Achievement</h3>
-                        <p>
-                            <span class="info-label">3.8 in CIS</span> &
-                            Cumulative 3.7 GPA, Active Extracurricular
-                        </p>
-                    </div>
-                </div>
-                <div class="achievement-card">
-                    <div class="achievement-icon">
-                        <i class="fas fa-heartbeat"></i>
-                    </div>
-                    <div class="achievement-content">
-                        <h3>Characteristics</h3>
-                        <p>Passionate, Self-disciplined, Autodidact</p>
-                    </div>
-                </div>
-
             <!-- Strength -->
-                <div class="skills-section section-divider">
+                <div class="info-section">
                     <h3 class="skills-title">STRENGTHS</h3>
                     <div class="skills-group">
                         <div class="skills-tags">
@@ -132,9 +127,8 @@
                         </div>
                     </div>
                 </div>
-
             <!-- Language -->
-                <div class="language-section language-section-divider">
+                <div class="info-section">
                     <h3 class="skills-title">LANGUAGES</h3>
                     <div class="language-proficiency">
                         <div class="language-card">
@@ -169,124 +163,123 @@
                 </div>
             </div>
 
-        <!-- Secondary Content -->
-            <div class="secondary-content" id="secondaryContent">
+        <!-- Main Profile Content -->
+            <div class="main-profile-content" id="mainProfileContent">
+            <!-- Main Body -->
                 <div class="scrollable-container">
+                <!-- Intro, Edu, Ref -->
                     <div class="scrollable-cards" id="scrollableCards">
-                        
-                        <!-- Introduction Section -->
+                    <!-- Introduction -->
                         <div class="scroll-card">
-                            <div class="text-block">
-                                <h4 class="section-header"> 
-                                    <a href="https://www.google.com/maps/place/Indonesia" target="_blank"> <img src="world.gif" alt="world" class="small-icon"></a> Hello, World! <img src="waving.gif" alt="wave" class="small-icon"></h4>
-                                <p class="intro-text">
-                                    Hoi <span class="highlight">James</span> here, an aspiring <span class="highlight">Computer Scientist</span>.<br>
-                                    Whom loves building software that turns ideas into real-world solutions.<br><br>
-                                    My toolkit? <span class="accent">My Experience</span>, <span class="accent">Attitude</span>, and a <span class="accent">Relentless Drive</span> for professional growth.<br><br>
-                                    <span class="highlight">Data Scientist</span>/<span class="highlight"><br>
-                                    Software Engineer</span> in the making: I thrive on transforming messy data into clear, impactful insights. With a rock-solid CS foundation and a passion for problem-solving, I turn narratives into coding and ideas into action.<br><br>
-                                    <span class="scroll-hint">↓ Scroll more</span>
-                                </p><br>
-                            </div>
-                            <div class="text-block">
-                                <h4 class="section-header"><img src="bulb.gif" alt="bulb" class="small-icon"> How it started...</h4>
-                                <p>
-                                    It all clicked when I wrote my first <span class="highlight">C# script</span> for the classic snake game, hooked me forever. Now, I'm obsessed with staying ahead in <span class="accent">data science</span>'s fast-growing landscape or <span class="accent">developing technology</span>, one algorithm at a time.<span class="scroll-hint"> More ↓</span>
-                                </p><br><br>
-                            </div>
-                            <div class="text-block">
-                                <h4 class="section-header"><img src="ext.gif" alt="ext" class="small-icon"> Beyond the Code...</h4>
-                                <p>
-                                    When I'm not debugging life:<br>
-                                    • <img src="tools.gif" alt="tools" class="small-icon"> <span class="accent">Tinkering</span> with new technology,<br>
-                                    • <img src="plane.gif" alt="plane" class="small-icon"> <span class="accent">Traveling</span> to broaden one's perspective,<br>
-                                    • <img src="energy.gif" alt="energy" class="small-icon"> <span class="accent">Sports</span> & <span class="accent">gaming</span> for that adrenaline,<br>
-                                    • <img src="book.gif" alt="book" class="small-icon"> <span class="accent">Sci-fi novels</span> on a mind-bending escapes.<br>
-                                    • <img src="sprout.gif" alt="sprout" class="small-icon"> <span class="accent">Personal Growth</span> interacting with people.
-                                </p><br>
-                                <span class="scroll-hint">Switch for Education →</span>
-                            </div>
+                            <h4 class="profile-icon-header"> 
+                                <a href="https://www.google.com/maps/place/Indonesia" target="_blank"> <img src="icons/world.gif" alt="world" class="small-icon"></a> Hello, World! <img src="icons/waving.gif" alt="wave" class="small-icon"></h4>
+                            <p> Hoi <span class="highlight">James</span> here, an aspiring <span class="highlight">Computer Scientist</span>.<br>
+                                Whom loves building software that turns ideas into real-world solutions.<br><br>
+                                
+                                My toolkit? <span class="accent">My Experience</span>, <span class="accent">Attitude</span>, and a <span class="accent">Relentless Drive</span> for professional growth.<br><br>
+                                
+                                <span class="highlight">Data Scientist</span>/<br>
+                                <span class="highlight">Software Engineer</span> in the making: I thrive on transforming messy data into clear, impactful insights. With a rock-solid CS foundation and a passion for problem-solving, I turn narratives into coding and ideas into action.<br><br>
+                                
+                                <span class="scroll-hint">↓ Scroll more</span>
+                            </p><br>                        
+                            <h4 class="profile-icon-header">
+                                <a href="#" target="_blank"> <img src="icons/bulb.gif" alt="bulb" class="small-icon"></a> How it started...</h4>
+                            <p> It all clicked when I wrote my first <span class="highlight">C# script</span> for the classic snake game, hooked me forever. Now, I'm obsessed with staying ahead in <span class="accent">data science</span>'s fast-growing landscape or <span class="accent">developing technology</span>, one algorithm at a time.<span class="scroll-hint"> More ↓</span>
+                            </p><br><br>                                                
+                            <h4 class="profile-icon-header">
+                                <a href="#" target="_blank"> <img src="icons/ext.gif" alt="ext" class="small-icon"></a> Beyond the Code...</h4>
+                            <p> When I'm not debugging life:<br>
+                                • <img src="icons/tools.gif" alt="tools" class="small-icon"> <span class="accent">Tinkering</span> with new technology,<br>
+                                • <img src="icons/plane.gif" alt="plane" class="small-icon"> <span class="accent">Traveling</span> to broaden one's perspective,<br>
+                                • <img src="icons/energy.gif" alt="energy" class="small-icon"> <span class="accent">Sports</span> & <span class="accent">gaming</span> for that adrenaline,<br>
+                                • <img src="icons/book.gif" alt="book" class="small-icon"> <span class="accent">Sci-fi novels</span> on a mind-bending escapes.<br>
+                                • <img src="icons/sprout.gif" alt="sprout" class="small-icon"> <span class="accent">Personal Growth</span> interacting with people.
+                            </p><br>
+                            <span class="scroll-hint">Switch for Education →</span>
                         </div>
-                        
+                    <!-- Education -->
                         <!-- Education Section -->
                         <div class="scroll-card">
-                            <h2 style="color: #b0b0b0; margin-bottom: 0.5em;"><strong>📚 EDUCATION</strong></h2>
+                            <h2 class="edu-header"><strong>📚 EDUCATION</strong></h2>
                             <div class="text-block">
-                                <h4 class="section-header">🎓Washburn University</h4>
-                                <div class="info-grid" style="font-size: 0.7em; color: #777; margin-bottom: 0.5em;">
+                                <h4 class="profile-icon-header">🎓Washburn University</h4>
+                                <div class="edu-grid">
                                     <span style="color: var(--accent);">📍 Topeka, USA</span>
                                     <span>📅 Aug 2023 - <span style="color: var(--accent);">May 2026</span></span>
                                 </div>
-                                <h4 style="margin: 0.2em 0; font-family: Georgia, serif; font-size: 0.8em; font-weight: 600;">
-                                    B.Sc. Computer Information Science | Data Science Concentration</span>
+                                <h4 class="edu-track">
+                                    B.Sc.Computer Information Science<br>Data Science Concentration</span>
                                 </h4>
-                                <p style="font-family: Georgia, serif; font-size: 0.75em; margin: 0.5em 0;">
-                                    ▲<strong>3.72 GPA</strong> | <strong>Leadership:</strong> BytesBods(Treasurer), International Club(Peer), Peer Educator(International Student), Campus Ministry(Student Leader)
+                                <p class="edu-desc">
+                                    ▲<strong>3.72 GPA</strong> | <strong>Leadership:</strong> BytesBods (Treasurer), Peer Educator (Int'l Student), International Club (Peer), Campus Ministry (Student Leader)
                                 </p>
                             </div>
                             <div class="text-block" style="border-bottom: 1px solid #f0f0f0; margin-bottom: 1.5em; padding-bottom: 1.5em;">
-                                <h4 class="section-header" style="color: darkolivegreen;">🔄Allen Comm. College</h4>
-                                <div class="info-grid" style="font-size: 0.7em; color: #777;">
+                                <h4 class="profile-icon-header" style="color: darkolivegreen;">🔄Allen Comm. College</h4>
+                                <div class="edu-grid">
                                     <span style="color: var(--accent);">🌐Online, USA</span>
                                     <span>📅Aug 2024 - Dec 2024</span>
                                 </div>
-                                <p style="font-family: Georgia, serif; font-size: 0.75em; margin: 0.5em 0; font-style: italic;">
-                                    Credit transfer toward degree requirements
-                                </p>
                             </div>
                             <div class="text-block">
-                                <h4 class="section-header">🌏Sampoerna University</h4>
-                                <div class="info-grid" style="font-size: 0.7em; color: #777; margin-bottom: 0.5em;">
+                                <h4 class="profile-icon-header">🌏Sampoerna University</h4>
+                                <div class="edu-grid">
                                     <span style="color: var(--accent);">📍Jakarta, IDN</span>
                                     <span>📅Aug 2021 - <span style="color: var(--accent);">May 2023</span></span>
                                 </div>
-                                <h4 style="margin: 0.2em 0; font-family: Georgia, serif; font-size: 0.8em; font-weight: 600;">
-                                    B.Sc. Computer Science
+                                <h4 class="edu-track">
+                                    B.Sc.Computer Science
                                 </h4>
-                                <p style="font-family: Georgia, serif; font-size: 0.75em; margin: 0.5em 0;">
+                                <p class="edu-desc">
                                     ▲<strong>3.7 GPA</strong> | <strong>Activities:</strong> GDSC, Archery, Japanese Club, Investor Club
                                 </p>
                             </div>
                             <div class="text-block">
-                                <h4 class="section-header" style="color: darkolivegreen;">🔄Broward College</h4>
-                                <div class="info-grid" style="font-size: 0.7em; color: #777;">
+                                <h4 class="profile-icon-header" style="color: darkolivegreen;">🔄Broward College</h4>
+                                <div class="edu-grid">
                                     <span style="color: var(--accent);">🌐Online, USA</span>
                                     <span>📅Aug 2022 - May 2023</span>
                                 </div>
                             </div>
                             <div class="text-block" style="border-bottom: 1px solid #f0f0f0; margin-bottom: 1.5em; padding-bottom: 1.5em;">
-                                <h4 class="section-header" style="color: darkolivegreen;">🔄Univ. of Arizona</h4>
-                                <div class="info-grid" style="font-size: 0.7em; color: #777;">
+                                <h4 class="profile-icon-header" style="color: darkolivegreen;">🔄Univ. of Arizona</h4>
+                                <div class="edu-grid">
                                     <span style="color: var(--accent);">🌐Online, USA</span>
                                     <span>📅Aug 2022 - May 2023</span>
                                 </div>
                             </div>
                             <div class="text-block" style="border-bottom: 1px solid #f0f0f0; margin-bottom: 1.5em; padding-bottom: 1.5em;">
-                                <h4 class="section-header">🏫Jakarta National HS<sup>#2</sup></h4>
-                                <div class="info-grid" style="font-size: 0.7em; color: #777; margin-bottom: 0.5em;">
+                                <h4 class="profile-icon-header">🏫Jakarta National HS<sup>#2</sup></h4>
+                                <div class="edu-grid">
                                     <span style="color: var(--accent);">📍Jakarta, IDN</span>
                                     <span>📅Aug 2018 - <span style="color: var(--accent);">May 2021</span></span>
                                 </div>
-                                <p style="font-family: Georgia, serif; font-size: 0.75em; margin: 0.5em 0;">
-                                    ▲<strong>3.0 GPA</strong> | <strong>Natural Science Track</strong> | KIR, OSN, German Club
+                                <h4 class="edu-track">
+                                    Natural Science Track
+                                </h4>
+                                <p class="edu-desc">
+                                    ▲<strong>3.0 GPA</strong> | KIR(Science Research Group), OSN(Physics Comp), FLSN(Arts Comp), German Club(Debate Comp)
                                 </p>
                             </div>
                             <div class="text-block" style="border-bottom: 1px solid #f0f0f0; margin-bottom: 1.5em; padding-bottom: 1.5em;">
-                                <h4 class="section-header">✏️ Bunda Mulia Schools</h4>
-                                <div class="info-grid" style="font-size: 0.7em; color: #777;">
+                                <h4 class="profile-icon-header">✏️ Bunda Mulia Schools</h4>
+                                <div class="edu-grid">
                                 <span style="color: var(--accent);">📍Jakarta, IDN</span>
                                 <span>📅Aug 2008 - <span style="color: var(--accent);">May 2018</span></span>
                                 </div>
-                                <p style="font-family: Georgia, serif; font-size: 0.75em; margin: 0.5em 0;">
-                                ▲ Middle School: Mandarin & English Proficiency<br>
-                                ▲ Primary(<span style="color: var(--accent);">Tarsisius 1 School</span>): ComputerKID Robotics Cert.<br>
+                                <h4 class="edu-track">
+                                    English/Mandarin
+                                </h4>
+                                <p class="edu-desc">
+                                ▲ Middle School: Basketball Player, Futsal Player, Badminton Player<br>
+                                ▲ Primary (<span style="color: var(--accent);">Tarsisius 1 School</span>): ComputerKID Robotics Cert.<br>
                                 ▲ Kindergarten: English & Mandarin & Swimming
                                 </p>
                             </div>
                             <span class="scroll-hint">Switch for References →</span>
                         </div>
-                        
-                        <!-- References Section -->
+                    <!-- References -->
                         <div class="scroll-card">
                             <h2 style="color: #b0b0b0; margin-bottom: 0.5em;">📌 <strong>REFERENCES</strong></h2>
                             <div class="reference-item">
@@ -348,7 +341,7 @@
                         </div>
                     </div>
                 </div>
-
+            <!-- Navigation -->
                 <div class="scroll-nav" id="scrollNav">
                     <span class="scroll-dot active" data-index="0"></span>
                     <span class="scroll-dot" data-index="1"></span>
@@ -359,13 +352,13 @@
 
     <!-- Left Panel Toggle -->
         <div class="left-toggle" id="leftToggle">
-            <div class="left-toggle-dot"></div>
-            <div class="left-toggle-dot"></div>
-            <div class="left-toggle-dot"></div>
+            <div class="left-toggle-line"></div>
+            <div class="left-toggle-line"></div>
+            <div class="left-toggle-line"></div>
         </div>
 
     <!-- Middle Content -->
-        <div class="middle-section" id="middleSection">
+        <div class="middle-panel" id="middleSection">
         <!-- Banner -->
             <div class="banner">
                 <h2>GET TO KNOW ME!</h2>
@@ -405,7 +398,7 @@
                                 <br><div class="card-header">
                                     <h3 class="card-title">HabitGuard</h3>
                                     <a href="https://github.com/jvillanueva3651/HabitGuard" target="_blank" rel="noopener noreferrer">
-                                        <img class="card-icon" src="habit_guard.png" alt="Project icon">
+                                        <img class="card-icon" src="fun/habit_guard.png" alt="Project icon">
                                     </a>
                                 </div>
                                 <div class="card-meta">
@@ -436,7 +429,7 @@
                                 <br><div class="card-header">
                                     <h3 class="card-title">Wearable's UI/UX on Mental Health</h3>
                                     <a href="https://www.iacis.org/iis/2025/2_iis_2025_387-401.pdf" target="_blank" rel="noopener noreferrer">
-                                        <img class="card-icon" src="IACIS.png" alt="Project icon">
+                                        <img class="card-icon" src="fun/IACIS.png" alt="Project icon">
                                     </a>
                                 </div>
                                 <div class="card-meta">
@@ -466,7 +459,7 @@
                                 <br><div class="card-header">
                                     <h3 class="card-title">Epidemiological Spread Simulation</h3>
                                     <a href="https://drive.google.com/drive/folders/1LUA-w7OS4nCBs2Dd1SqgLtwrMoxuup8y?usp=drive_link" target="_blank" rel="noopener noreferrer">
-                                        <img class="card-icon" src="VBA.png" alt="Project icon">
+                                        <img class="card-icon" src="fun/VBA.png" alt="Project icon">
                                     </a>
                                 </div>
                                 <div class="card-meta">
@@ -496,7 +489,7 @@
                                 <br><div class="card-header">
                                     <h3 class="card-title">Handedness Classification</h3>
                                     <a href="https://github.com/FDCub4/CM-332" target="_blank" rel="noopener noreferrer">
-                                        <img class="card-icon" src="handedness.png" alt="Project icon">
+                                        <img class="card-icon" src="fun/handedness.png" alt="Project icon">
                                     </a>
                                 </div>
                                 <div class="card-meta">
@@ -525,7 +518,7 @@
                             <div class="card-content">
                                 <br><div class="card-header">
                                     <h3 class="card-title">Sandbox Malware Analysis</h3>
-                                    <img class="card-icon" src="cuckoo.jpg" alt="Project icon">
+                                    <img class="card-icon" src="fun/cuckoo.jpg" alt="Project icon">
                                 </div>
                                 <div class="card-meta">
                                     <span style="color: #f0f0f0;">Cybersecurity Res. |<br> ComptTIA Security+</span>
@@ -550,7 +543,7 @@
                             <div class="card-content">
                                 <br><div class="card-header">
                                     <h3 class="card-title">Movie System</h3>
-                                    <img class="card-icon" src="movieDB.png" alt="Project icon">
+                                    <img class="card-icon" src="fun/movieDB.png" alt="Project icon">
                                 </div>
                                 <div class="card-meta">
                                     <span style="color: #f0f0f0;">DB Management |<br> PostgreSQL</span>
@@ -576,7 +569,7 @@
                                 <br><div class="card-header">
                                     <h3 class="card-title">AI Pathfinding</h3>
                                     <a href="https://github.com/Washburn-CIS/cm331-programming-portfolio-JamesTanasyah" target="_blank" rel="noopener noreferrer">
-                                        <img class="card-icon" src="AI.png" alt="Project icon">
+                                        <img class="card-icon" src="fun/AI.png" alt="Project icon">
                                     </a>
                                 </div>
                                 <div class="card-meta">
@@ -605,7 +598,7 @@
                             <div class="card-content">
                                 <br><div class="card-header">
                                     <h3 class="card-title">Cross Data Recovery</h3>
-                                    <img class="card-icon" src="data.png" alt="Project icon">
+                                    <img class="card-icon" src="fun/data.png" alt="Project icon">
                                 </div>
                                 <div class="card-meta">
                                     <span style="color: #f0f0f0;">Digital Forensics |<br> Research</span>
@@ -630,7 +623,7 @@
                             <div class="card-content">
                                 <br><div class="card-header">
                                     <h3 class="card-title">RESTful API Service</h3>
-                                    <img class="card-icon" src="GeoLocator.png" alt="Project icon">
+                                    <img class="card-icon" src="fun/GeoLocator.png" alt="Project icon">
                                 </div>
                                 <div class="card-meta">
                                     <span style="color: #f0f0f0;">Software Engineering |<br> Web Services</span>
@@ -655,7 +648,7 @@
                             <div class="card-content">
                                 <br><div class="card-header">
                                     <h3 class="card-title">In Working Progress</h3>
-                                    <img class="card-icon" src="WIP.png" alt="WIP icon">
+                                    <img class="card-icon" src="fun/WIP.png" alt="WIP icon">
                                 </div>
                                 <div class="card-meta">
                                     <span style="color: #f0f0f0;">Personal Assistant |<br> AI Persona</span>
@@ -680,7 +673,7 @@
                             <div class="card-content">
                                 <br><div class="card-header">
                                     <h3 class="card-title">In Working Progress</h3>
-                                    <img class="card-icon" src="lang.png" alt="language icon">
+                                    <img class="card-icon" src="fun/lang.png" alt="language icon">
                                 </div>
                                 <div class="card-meta">
                                     <span style="color: #f0f0f0;">Language Learning |<br> Polyglot Training</span>
@@ -705,7 +698,7 @@
                             <div class="card-content">
                                 <br><div class="card-header">
                                     <h3 class="card-title">In Working Progress</h3>
-                                    <img class="card-icon" src="UTD.png" alt="UTD icon">
+                                    <img class="card-icon" src="fun/UTD.png" alt="UTD icon">
                                 </div>
                                 <div class="card-meta">
                                     <span style="color: #f0f0f0;">Up To Date Info. |<br> AI organizer</span>
@@ -1303,9 +1296,9 @@
 
     <!-- Right Panel Toggle -->
         <div class="right-toggle" id="rightToggle">
-            <div class="right-toggle-line"></div>
-            <div class="right-toggle-line"></div>
-            <div class="right-toggle-line"></div>
+            <div class="right-toggle-bullet"></div>
+            <div class="right-toggle-bullet"></div>
+            <div class="right-toggle-bullet"></div>
         </div>
     </div>
 </body>
