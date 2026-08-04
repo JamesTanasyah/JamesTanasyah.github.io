@@ -889,7 +889,8 @@ body {
   overflow: visible;
 }
 .project-card:hover .card-description {
-  -webkit-line-clamp: unset;
+  -webkit-line-clamp: initial;
+  line-clamp: initial;
   overflow: visible;
 }
 .project-card:hover .card-body {
