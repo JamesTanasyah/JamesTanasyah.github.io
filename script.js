@@ -1,67 +1,62 @@
-const expandBtn = document.getElementById('expandBtn');
-const profileContent = document.getElementById('profileContent');
-const secondaryContent = document.getElementById('secondaryContent');
+const langMenu = document.querySelector('.lang-menu');
+const selectedLang = document.getElementById('selectedLang');
+const dropdown = document.querySelector('.lang-dropdown');
 
-document.addEventListener('DOMContentLoaded', function() {
-    const langMenu = document.querySelector('.lang-menu');
-    const selectedLang = document.getElementById('selectedLang');
-    const langDropdown = document.querySelector('.lang-dropdown');
-    const langOptions = document.querySelectorAll('.lang-dropdown a');
-    const rightPanel = document.getElementById('rightPanel');
-    
-    // Toggle dropdown on click
-    langMenu.addEventListener('click', function(e) {
-        e.stopPropagation();
-        
-        // Close all other dropdowns first
-        document.querySelectorAll('.lang-menu.active').forEach(menu => {
-            if (menu !== langMenu) menu.classList.remove('active');
-        });
-        
-        langMenu.classList.toggle('active');
-        
-        // Position dropdown based on panel state
-        if (rightPanel.classList.contains('expanded')) {
-            langDropdown.style.left = 'calc(100vw - 70px)';
-        } else {
-            langDropdown.style.left = 'calc(100vw - 35px)';
-        }
-    });
-    
-    // Close dropdown when clicking outside
-    document.addEventListener('click', function() {
+
+// Open / close language dropdown
+selectedLang.addEventListener('click', function (event) {
+    event.stopPropagation();
+    langMenu.classList.toggle('active');
+});
+
+
+// Select a language
+dropdown.addEventListener('click', function (event) {
+    const link = event.target.closest('a');
+
+    if (!link) return;
+
+    event.preventDefault();
+    event.stopPropagation();
+
+    const selectedCode = link.dataset.lang;
+
+    // Update the selected language at the top
+    const selectedItem = link.parentElement;
+
+    // Move the selected language to the top of the dropdown
+    dropdown.prepend(selectedItem);
+
+    // Update the language shown in the navigation
+    const flag = selectedItem.querySelector('.lang-flag');
+    const text = selectedItem.querySelector('.lang-text');
+
+    selectedLang.innerHTML = `
+        <span class="lang-flag ${flag.classList[1]}"></span>
+        <span class="lang-text">${selectedCode === 'en' ? 'EN' :
+                                  selectedCode === 'id' ? 'ID' :
+                                  selectedCode === 'de' ? 'DE' :
+                                  selectedCode === 'zh' ? '中文' :
+                                  selectedCode === 'ja' ? '日本語' : selectedCode}</span>
+    `;
+
+    // Close dropdown
+    langMenu.classList.remove('active');
+
+    /*
+     * Your existing language-changing code can go here.
+     *
+     * For example:
+     * changeLanguage(selectedCode);
+     */
+});
+
+
+// Close dropdown when clicking outside
+document.addEventListener('click', function (event) {
+    if (!langMenu.contains(event.target)) {
         langMenu.classList.remove('active');
-    });
-    
-    // Handle language selection
-    langOptions.forEach(option => {
-        option.addEventListener('click', function(e) {
-            e.preventDefault();
-            const lang = this.getAttribute('data-lang');
-            const flagClass = this.querySelector('.lang-flag').className;
-            const langText = this.querySelector('.lang-text').textContent;
-            
-            // Update selected language display
-            selectedLang.innerHTML = `
-                <span class="${flagClass}"></span>
-                <span class="lang-text">${lang.toUpperCase()}</span>
-            `;
-            
-            // Here you would change the site language
-            console.log('Language changed to:', lang);
-            
-            // Close dropdown
-            langMenu.classList.remove('active');
-        });
-    });
-    
-    // Adjust on window resize
-    window.addEventListener('resize', function() {
-        if (langMenu.classList.contains('active')) {
-            langMenu.click(); // Close and reopen to reposition
-            langMenu.click();
-        }
-    });
+    }
 });
 
 // Toggle profile expansion
@@ -84,7 +79,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const birthYear = 2003;
     const currentYear = new Date().getFullYear();
     const age = currentYear - birthYear;
-    document.getElementById('ageDisplay').textContent = age;
+    document.getElementById('ageDisplay').textContent =": " + age;
 });
 
 // Scrollable cards functionality
